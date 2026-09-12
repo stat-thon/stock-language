@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+_site/
+.hallmark/
+preview-*.png
+test-results/
+playwright-report/
+*backup*.json
+*contribution*.json
+*review*.json
+문장너머-학습기록-*.json
+문장너머-공개검토용사례-*.json

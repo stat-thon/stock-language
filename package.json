@@ -1,0 +1,14 @@
+{
+  "name": "stock-language",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node validate-data.mjs",
+    "build": "node validate-data.mjs && node build.mjs",
+    "test": "node verify.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}

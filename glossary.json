@@ -1,0 +1,1141 @@
+[
+  {
+    "id": "per",
+    "name": "PER",
+    "aliases": [
+      "주가수익비율",
+      "주가이익비율",
+      "피이알"
+    ],
+    "category": "기업가치",
+    "level": "기초",
+    "definition": "주가가 1주당 순이익(EPS)의 몇 배인지 나타내요. 주가 ÷ EPS로 계산해요.",
+    "example": "가상 계산: 주가 10,000원, 연간 EPS 1,000원이면 PER은 10배예요.",
+    "pitfall": "낮다고 무조건 싸지는 않아요. 적자일 때 해석이 어렵고, 예상이익 기준인지도 중요해요.",
+    "check": "실적 기간, 예상치 여부, 같은 업종의 PER을 확인해요.",
+    "sources": [
+      {
+        "label": "한국거래소 · 투자지표 산출방식",
+        "url": "https://kind.krx.co.kr/external/dst/guidebook/investment_indicators.pdf"
+      },
+      {
+        "label": "한국거래소 · 투자지표 및 산출 유의사항",
+        "url": "https://kind.krx.co.kr/valueup/invstindicstocks.do?method=valueupInvstIndicRankIsuMain"
+      }
+    ]
+  },
+  {
+    "id": "pbr",
+    "name": "PBR",
+    "aliases": [
+      "주가순자산비율",
+      "피비알"
+    ],
+    "category": "기업가치",
+    "level": "기초",
+    "definition": "주가가 장부상 1주당 순자산(BPS)의 몇 배인지 나타내요. 주가 ÷ BPS예요.",
+    "example": "가상 계산: 주가 8,000원, BPS 10,000원이면 0.8배예요.",
+    "pitfall": "1배 미만이어도 손실 지속이나 자산가치 하락 우려가 있을 수 있어요.",
+    "check": "순자산의 구성, 부채, 수익성, 같은 업종을 함께 확인해요.",
+    "sources": [
+      {
+        "label": "한국거래소 · 투자지표 산출방식",
+        "url": "https://kind.krx.co.kr/external/dst/guidebook/investment_indicators.pdf"
+      },
+      {
+        "label": "한국거래소 · 투자지표 및 산출 유의사항",
+        "url": "https://kind.krx.co.kr/valueup/invstindicstocks.do?method=valueupInvstIndicRankIsuMain"
+      }
+    ]
+  },
+  {
+    "id": "eps",
+    "name": "EPS",
+    "aliases": [
+      "주당순이익",
+      "이피에스"
+    ],
+    "category": "기업가치",
+    "level": "기초",
+    "definition": "보통주 1주에 해당하는 순이익이에요. 보통주 귀속 순이익을 기간 중 가중평균 유통주식 수로 나눠요.",
+    "example": "가상 계산: 해당 순이익 1억원 ÷ 평균 주식 10만주 = EPS 1,000원.",
+    "pitfall": "배당금과 달라요. 주식 수가 늘면 같은 이익이어도 낮아질 수 있어요.",
+    "check": "기본·희석 EPS, 기간, 연결·별도 기준을 확인해요.",
+    "sources": [
+      {
+        "label": "한국거래소 · 투자지표 산출방식",
+        "url": "https://kind.krx.co.kr/external/dst/guidebook/investment_indicators.pdf"
+      }
+    ]
+  },
+  {
+    "id": "roe",
+    "name": "ROE",
+    "aliases": [
+      "자기자본이익률",
+      "알오이"
+    ],
+    "category": "기업가치",
+    "level": "한 걸음 더",
+    "definition": "주주 몫의 자본으로 얼마나 순이익을 냈는지예요. 순이익 ÷ 평균 자기자본 × 100으로 봐요.",
+    "example": "가상 계산: 순이익 10억원, 평균 자기자본 100억원이면 10%예요.",
+    "pitfall": "빚 증가나 자본 감소로도 높아질 수 있어요.",
+    "check": "이익의 지속성, 자본 변동, 부채 수준을 확인해요.",
+    "sources": [
+      {
+        "label": "한국거래소 · 투자지표 산출방식",
+        "url": "https://kind.krx.co.kr/external/dst/guidebook/investment_indicators.pdf"
+      }
+    ]
+  },
+  {
+    "id": "market-cap",
+    "name": "시가총액",
+    "aliases": [
+      "시총",
+      "market cap"
+    ],
+    "category": "기업가치",
+    "level": "기초",
+    "definition": "상장된 주식 전체에 시장이 붙인 가격이에요. 해당 종류의 주가에 상장주식 수를 곱해요.",
+    "example": "가상 계산: 주가 5,000원 × 1억주 = 시가총액 5,000억원.",
+    "pitfall": "주가가 낮다고 회사 전체가 저렴한 것은 아니에요. 시총은 회사가 가진 현금도 아니에요.",
+    "check": "보통주·우선주 구분, 주식 수, 기준일을 확인해요.",
+    "sources": [
+      {
+        "label": "산식 확인 예 · 솔브레인 공식 IR의 주가·주식 수·시가총액",
+        "url": "https://kind.krx.co.kr/external/dst/irReference/17166/%EC%86%94%EB%B8%8C%EB%A0%88%EC%9D%B8_2025%EB%85%84%202%EB%B6%84%EA%B8%B0%20%EA%B2%BD%EC%98%81%EC%8B%A4%EC%A0%81.pdf"
+      }
+    ]
+  },
+  {
+    "id": "operating-margin",
+    "name": "영업이익률",
+    "aliases": [
+      "OPM",
+      "영업익률"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "매출에서 영업이익이 차지하는 비율이에요. 영업이익 ÷ 매출액 × 100으로 계산해요.",
+    "example": "가상 계산: 매출 100억원, 영업이익 12억원이면 영업이익률은 12%예요.",
+    "pitfall": "매출 증가와 이익률 상승은 다른 말이에요. 현금이 같은 비율로 남았다는 뜻도 아니에요.",
+    "check": "전년 동기와 같은 사업부의 수치를 비교해요.",
+    "sources": [
+      {
+        "label": "한국은행 · 기업경영분석 교육",
+        "url": "https://www.bok.or.kr/portal/bbs/B0000216/view.do?listType=G&menuNo=20134&nttId=10069022&pageIndex=8"
+      }
+    ]
+  },
+  {
+    "id": "supply-demand",
+    "name": "수급",
+    "aliases": [],
+    "category": "수급",
+    "level": "기초",
+    "definition": "주식을 사려는 수요와 팔려는 공급의 흐름을 통틀어 부르는 말이에요. 하나의 공식 지표는 아니에요.",
+    "example": "읽는 법: ‘수급이 좋다’면 누가, 어떤 기간에, 얼마나 샀다는 근거인지 살펴봐요.",
+    "pitfall": "거래가 체결되면 산 사람과 판 사람이 모두 있어요. 수급 평가만으로 이후 방향을 확정할 수 없어요.",
+    "check": "투자자별 순매수, 거래량, 기간과 집계 시장을 함께 확인해요.",
+    "sources": [
+      {
+        "label": "한국은행 · 기업 실적과 주가, 수급의 관계",
+        "url": "https://www.bok.or.kr/portal/bbs/B0000217/view.do?listType=G&menuNo=200144&nttId=214400&pageIndex=12"
+      }
+    ]
+  },
+  {
+    "id": "net-buy",
+    "name": "순매수",
+    "aliases": [
+      "순매수량",
+      "순매수액"
+    ],
+    "category": "수급",
+    "level": "기초",
+    "definition": "같은 투자자 구분·기간에서 매수량(금액)에서 매도량(금액)을 뺀 값이에요. 음수면 순매도예요.",
+    "example": "가상 계산: 외국인이 100억원 사고 70억원 팔면 30억원 순매수예요.",
+    "pitfall": "순매수는 전체 보유량이나 새로 들어온 현금과 같지 않아요.",
+    "check": "수량·금액 단위, 당일·누적 기간, 잠정·확정 여부를 확인해요.",
+    "sources": [
+      {
+        "label": "통계 확인 · 한국거래소 데이터 마켓플레이스",
+        "url": "https://data.krx.co.kr/contents/MDC/MAIN/main.jspx"
+      }
+    ]
+  },
+  {
+    "id": "short-selling",
+    "name": "공매도",
+    "aliases": [
+      "차입공매도"
+    ],
+    "category": "수급",
+    "level": "한 걸음 더",
+    "definition": "소유하지 않은 주식을 파는 거래예요. 차입공매도는 빌린 주식으로 결제한 뒤 주식을 돌려줘야 하는 방식이에요.",
+    "example": "가상 계산: 1만원에 빌려 팔고 9천원에 사서 갚으면 비용 전 차액은 1천원이에요. 반대로 오르면 손실이에요.",
+    "pitfall": "공매도 거래량과 남아 있는 공매도 순보유잔고는 달라요. 공매도가 있다고 하락이 확정되지는 않아요.",
+    "check": "거래대금 비중과 순보유잔고, 집계일을 구분해요.",
+    "sources": [
+      {
+        "label": "금융투자협회 · 증권 대차 및 공매도 정의",
+        "url": "https://law.kofia.or.kr/service/law/detailArticlePrint.do?contentSeq=279165&historySeq=1660&seq=336"
+      }
+    ]
+  },
+  {
+    "id": "lending-balance",
+    "name": "대차잔고",
+    "aliases": [
+      "대차잔액"
+    ],
+    "category": "수급",
+    "level": "한 걸음 더",
+    "definition": "빌려준 주식 중 아직 반환되지 않은 물량을 집계한 값이에요. 주식 대여 기록을 보는 숫자예요.",
+    "example": "가상 계산: 100주를 빌리고 30주를 반환했다면 남은 대차잔고는 70주예요.",
+    "pitfall": "빌린 주식이 모두 이미 공매도로 팔린 것은 아니에요. 대차잔고를 공매도 잔고와 같은 값으로 읽지 않아요.",
+    "check": "수량·평가금액, 신규 차입·상환, 공매도 통계를 따로 확인해요.",
+    "sources": [
+      {
+        "label": "금융투자협회 · 증권 대차 및 공매도 정의",
+        "url": "https://law.kofia.or.kr/service/law/detailArticlePrint.do?contentSeq=279165&historySeq=1660&seq=336"
+      },
+      {
+        "label": "금융위원회 · 공매도 전산화와 대차잔고 설명",
+        "url": "https://www.fsc.go.kr/no040101?cnId=3154&curPage=10&pastPage=10&srchKey=&srchText="
+      }
+    ]
+  },
+  {
+    "id": "volume",
+    "name": "거래량",
+    "aliases": [],
+    "category": "수급",
+    "level": "기초",
+    "definition": "정해진 기간에 거래가 체결된 주식 수예요.",
+    "example": "가상 계산: 오전 300주, 오후 700주가 거래되면 하루 거래량은 1,000주예요.",
+    "pitfall": "같은 주식이 하루에 여러 번 거래될 수 있어요. 거래량이 많다고 매수자만 많다는 뜻은 아니에요.",
+    "check": "비교 기간, 평소 거래량, 상장주식 수 대비 비율을 확인해요.",
+    "sources": [
+      {
+        "label": "통계 확인 · 한국거래소 데이터 마켓플레이스",
+        "url": "https://data.krx.co.kr/contents/MDC/MAIN/main.jspx"
+      }
+    ]
+  },
+  {
+    "id": "turnover",
+    "name": "거래대금",
+    "aliases": [
+      "거래금액",
+      "대금"
+    ],
+    "category": "수급",
+    "level": "기초",
+    "definition": "각 거래의 체결가격에 수량을 곱한 금액을 모두 더한 값이에요.",
+    "example": "가상 계산: 1만원에 10주, 1만1천원에 20주가 거래되면 총 32만원이에요.",
+    "pitfall": "종가 × 하루 거래량과 정확히 같지 않아요. 회사로 유입된 매출이나 투자금도 아니에요.",
+    "check": "같은 기간의 거래량, 체결가격, 통화·금액 단위를 확인해요.",
+    "sources": [
+      {
+        "label": "통계 확인 · 한국거래소 데이터 마켓플레이스",
+        "url": "https://data.krx.co.kr/contents/MDC/MAIN/main.jspx"
+      }
+    ]
+  },
+  {
+    "id": "foreign-investor",
+    "name": "외국인",
+    "aliases": [
+      "외인",
+      "외국인 수급"
+    ],
+    "category": "수급",
+    "level": "기초",
+    "definition": "거래 통계에서 외국인 투자자로 분류된 투자자들이에요. 서로 다른 목적의 여러 투자자가 포함돼요.",
+    "example": "읽는 법: ‘외인 매수’라면 외국인 전체 순매수인지, 특정 외국계 증권사 창구 매수인지 구분해요.",
+    "pitfall": "외국계 증권사 거래원과 외국인 투자자는 같은 분류가 아니에요. 외국인이 한 팀처럼 움직이지도 않아요.",
+    "check": "투자자별 통계인지 거래원별 통계인지 먼저 확인해요.",
+    "sources": [
+      {
+        "label": "키움증권 · 투자자 및 거래원 조건검색 도움말",
+        "url": "https://download.kiwoom.com/hero4_help_doc/KiwoomHero4_AdvancedSearch.pdf"
+      }
+    ]
+  },
+  {
+    "id": "institution",
+    "name": "기관",
+    "aliases": [
+      "기관계",
+      "기관합계",
+      "기관 수급"
+    ],
+    "category": "수급",
+    "level": "기초",
+    "definition": "증권사·보험사·펀드·연기금 등 기관투자자를 묶은 통계 구분이에요. 세부 기관별 목적이 달라요.",
+    "example": "읽는 법: 기관 합계가 순매도여도 그 안의 연기금은 순매수일 수 있어요.",
+    "pitfall": "모든 기관이 같은 전망으로 거래한 것은 아니에요. 합계만 보면 반대 흐름이 가려질 수 있어요.",
+    "check": "금융투자·투신·연기금 등 세부 항목과 기간을 확인해요.",
+    "sources": [
+      {
+        "label": "키움증권 · 투자자 및 거래원 조건검색 도움말",
+        "url": "https://download.kiwoom.com/hero4_help_doc/KiwoomHero4_AdvancedSearch.pdf"
+      },
+      {
+        "label": "한국거래소 · 프로그램매매",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010404/RGL03010404.jsp"
+      }
+    ]
+  },
+  {
+    "id": "program-trading",
+    "name": "프로그램매매",
+    "aliases": [
+      "프로그램 매매",
+      "프매"
+    ],
+    "category": "수급",
+    "level": "한 걸음 더",
+    "definition": "시장 통계에서는 지수와 연결한 차익거래나 일정 요건의 주식 묶음 거래를 말해요. 단순히 컴퓨터로 주문했다는 뜻보다 좁아요.",
+    "example": "읽는 법: 프로그램 순매수를 보면 지수 가격차를 이용한 차익거래와 비차익거래를 나눠 봐요.",
+    "pitfall": "‘프로그램 매수 = 좋은 내부정보’가 아니에요. 지수 추종이나 위험 조정 목적도 있어요.",
+    "check": "해당 시장의 정의, 차익·비차익 구분, 선물 흐름을 확인해요.",
+    "sources": [
+      {
+        "label": "한국거래소 · 프로그램매매",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010404/RGL03010404.jsp"
+      }
+    ]
+  },
+  {
+    "id": "moving-average",
+    "name": "이동평균선",
+    "aliases": [
+      "이평선",
+      "20일선",
+      "60일선",
+      "5일선",
+      "120일선",
+      "200일선",
+      "MA",
+      "20주선",
+      "주봉 이평선"
+    ],
+    "category": "차트",
+    "level": "기초",
+    "definition": "일정한 개수의 최근 가격 평균을 이어 그린 선이에요. 보통 종가를 쓰며, 20일선은 최근 20거래일, 20주선은 최근 20주의 가격이 기준이에요.",
+    "example": "가상 계산: 최근 5일 종가의 합이 5만원이면 오늘 5일 단순이동평균은 1만원이에요.",
+    "pitfall": "과거 가격을 요약한 값이어서 반응이 늦어요. 선을 넘었다는 사실만으로 상승이 보장되지 않아요.",
+    "check": "기간, 일봉·주봉, 단순·지수 평균 설정을 확인해요.",
+    "sources": [
+      {
+        "label": "미래에셋증권 · KAIROS 차트 지표 설명",
+        "url": "https://securities.miraeasset.com/public/webdata/kairosguide5.pdf"
+      }
+    ]
+  },
+  {
+    "id": "support",
+    "name": "지지선",
+    "aliases": [
+      "지지",
+      "지지구간",
+      "지지대"
+    ],
+    "category": "차트",
+    "level": "기초",
+    "definition": "차트에서 하락이 멈추거나 매수 관심이 나타날 것으로 분석하는 가격대예요. 분석자의 해석이 들어가요.",
+    "example": "읽는 법: 과거 여러 번 반등한 구간을 보고 지지대라고 부를 수 있어요.",
+    "pitfall": "가격을 받치는 실제 장벽은 아니에요. 뉴스나 주문 변화로 쉽게 무너질 수 있어요.",
+    "check": "어떤 과거 저점·거래량·기간으로 정한 구간인지 확인해요.",
+    "sources": [
+      {
+        "label": "미래에셋증권 · KAIROS 차트 지표 설명",
+        "url": "https://securities.miraeasset.com/public/webdata/kairosguide5.pdf"
+      },
+      {
+        "label": "삼성증권 · 차트 유형과 매물대 설명",
+        "url": "https://www.samsungpop.com/contents/popdts/help/1401-6.html"
+      }
+    ]
+  },
+  {
+    "id": "resistance",
+    "name": "저항선",
+    "aliases": [
+      "저항",
+      "저항구간",
+      "저항대"
+    ],
+    "category": "차트",
+    "level": "기초",
+    "definition": "차트에서 상승이 막히거나 매도 관심이 나타날 것으로 분석하는 가격대예요.",
+    "example": "읽는 법: 이전 고점 부근에서 여러 번 상승이 멈췄다면 저항대로 해석할 수 있어요.",
+    "pitfall": "돌파가 불가능한 상한선은 아니에요. 분석 기간에 따라 저항대가 달라져요.",
+    "check": "이전 고점, 거래량, 돌파 이후 가격을 같은 차트 설정으로 살펴봐요.",
+    "sources": [
+      {
+        "label": "미래에셋증권 · KAIROS 차트 지표 설명",
+        "url": "https://securities.miraeasset.com/public/webdata/kairosguide5.pdf"
+      },
+      {
+        "label": "삼성증권 · 차트 유형과 매물대 설명",
+        "url": "https://www.samsungpop.com/contents/popdts/help/1401-6.html"
+      }
+    ]
+  },
+  {
+    "id": "rsi",
+    "name": "RSI",
+    "aliases": [
+      "상대강도지수"
+    ],
+    "category": "차트",
+    "level": "한 걸음 더",
+    "definition": "일정 기간의 평균 상승폭과 하락폭을 비교해 최근 가격 움직임의 강도를 0~100으로 표시한 지표예요.",
+    "example": "읽는 법: 14일 설정에서 70·30을 과매수·과매도 참고선으로 자주 쓰지만 기준은 변경할 수 있어요.",
+    "pitfall": "70 이상이면 바로 하락하거나 30 이하면 바로 반등한다는 뜻이 아니에요.",
+    "check": "기간과 계산 방식, 실제 추세를 함께 확인해요.",
+    "sources": [
+      {
+        "label": "미래에셋증권 · KAIROS 차트 지표 설명",
+        "url": "https://securities.miraeasset.com/public/webdata/kairosguide5.pdf"
+      }
+    ]
+  },
+  {
+    "id": "rights-issue",
+    "name": "유상증자",
+    "aliases": [
+      "유증",
+      "유상 증자"
+    ],
+    "category": "공시",
+    "level": "한 걸음 더",
+    "definition": "회사가 돈이나 재산을 받고 새 주식을 발행해 자금을 마련하는 일이에요.",
+    "example": "가상 계산: 1만주의 신주를 주당 5,000원에 발행하면 조달금액은 비용 전 5,000만원이에요.",
+    "pitfall": "증자라는 이유만으로 호재·악재를 정할 수 없어요. 자금 용도와 발행 조건이 중요해요.",
+    "check": "공시의 자금 목적, 발행 주식 수·가격, 배정 방식, 일정을 확인해요.",
+    "sources": [
+      {
+        "label": "금융위원회 · 유상증자 유형과 자금 목적 확인",
+        "url": "https://www.fsc.go.kr/po010105/80950?curPage=8&srchBeginDt=&srchCtgry=5&srchEndDt=&srchKey=&srchText="
+      }
+    ]
+  },
+  {
+    "id": "convertible-bond",
+    "name": "전환사채",
+    "aliases": [
+      "CB"
+    ],
+    "category": "공시",
+    "level": "한 걸음 더",
+    "definition": "정해진 조건에 따라 회사 주식으로 바꿀 수 있는 채권이에요. 전환가액은 주식으로 바꿀 때 적용하는 가격이에요.",
+    "example": "가상 계산: 채권 100만원을 전환가액 1만원에 전환한다면 100주에 해당해요. 실제 교부 조건은 공시를 따라요.",
+    "pitfall": "발행 즉시 전량이 주식이 되는 것은 아니에요. 전환가액 조정 조건도 중요해요.",
+    "check": "전환 가능 기간·수량, 조정 조건, 만기·조기상환 조건을 확인해요.",
+    "sources": [
+      {
+        "label": "금융위원회 · 전환사채의 조건과 희석 우려",
+        "url": "https://www.fsc.go.kr/po010102/81540?curPage=&srchBeginDt=&srchCtgry=&srchEndDt=&srchKey=&srchText="
+      }
+    ]
+  },
+  {
+    "id": "dilution",
+    "name": "희석",
+    "aliases": [
+      "지분 희석",
+      "주식 희석"
+    ],
+    "category": "공시",
+    "level": "한 걸음 더",
+    "definition": "주식 수가 늘면서 기존 주주의 지분율이나 1주당 이익의 몫이 줄어들 수 있는 현상이에요.",
+    "example": "가상 계산: 총 100주 중 10주를 보유하면 10%. 새로 25주가 발행되고 추가 취득이 없으면 8%예요.",
+    "pitfall": "지분율 감소와 주가 하락률은 같지 않아요. 오버행은 잠재적 매도 부담이라는 더 넓은 표현이에요.",
+    "check": "증자·전환 물량, 조달한 자금의 사용처, 희석 EPS를 확인해요.",
+    "sources": [
+      {
+        "label": "금융위원회 · 전환사채의 조건과 희석 우려",
+        "url": "https://www.fsc.go.kr/po010102/81540?curPage=&srchBeginDt=&srchCtgry=&srchEndDt=&srchKey=&srchText="
+      },
+      {
+        "label": "금융위원회 · 유상증자 유형과 자금 목적 확인",
+        "url": "https://www.fsc.go.kr/po010105/80950?curPage=8&srchBeginDt=&srchCtgry=5&srchEndDt=&srchKey=&srchText="
+      }
+    ]
+  },
+  {
+    "id": "hbm",
+    "name": "HBM",
+    "aliases": [
+      "고대역폭 메모리",
+      "에이치비엠"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "여러 D램 칩을 쌓고 연결해 한 번에 많은 데이터를 주고받도록 만든 메모리예요. AI 연산장치 등에 쓰여요.",
+    "example": "읽는 법: HBM 수요 이야기는 연산장치와 메모리 사이의 데이터 이동량이 커진다는 맥락이에요.",
+    "pitfall": "‘HBM 관련’이라는 말만으로 실제 공급계약·매출·이익이 확인되지는 않아요.",
+    "check": "제품 세대, 양산·인증 단계, 회사가 공식 발표한 매출과 공급 정보를 확인해요.",
+    "sources": [
+      {
+        "label": "SK하이닉스 · HBM과 TSV 설명",
+        "url": "https://news.skhynix.co.kr/chip-easy-2/"
+      }
+    ]
+  },
+  {
+    "id": "dram",
+    "name": "DRAM",
+    "aliases": [
+      "D램",
+      "디램"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "작업 중 필요한 데이터를 빠르게 읽고 쓰는 메모리예요. 전원이 꺼지면 저장된 정보가 사라지는 휘발성 메모리예요.",
+    "example": "가상 비유: 당장 꺼내 쓰는 작업 공간과 비슷해요. DDR5는 D램 인터페이스 규격의 한 세대예요.",
+    "pitfall": "D램과 HBM은 완전히 별개가 아니에요. HBM도 D램을 활용한 제품이에요.",
+    "check": "PC·모바일·서버 제품 구분과 제품별 수요·가격을 확인해요.",
+    "sources": [
+      {
+        "label": "SK하이닉스 · DRAM과 NAND의 차이",
+        "url": "https://news.skhynix.co.kr/post/dram-and-nand-flash"
+      },
+      {
+        "label": "SK하이닉스 · HBM과 TSV 설명",
+        "url": "https://news.skhynix.co.kr/chip-easy-2/"
+      }
+    ]
+  },
+  {
+    "id": "nand",
+    "name": "NAND",
+    "aliases": [
+      "낸드",
+      "낸드플래시",
+      "NAND Flash"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "전원이 꺼져도 정보를 보관하는 메모리예요. SSD 같은 저장장치에 사용돼요. SSD는 NAND 등을 조합한 완제품이에요.",
+    "example": "가상 비유: 작업이 끝난 파일을 보관하는 저장 공간에 가까워요. eSSD는 기업용 SSD를 말해요.",
+    "pitfall": "낸드 가격 상승이 모든 제품·기업의 이익에 똑같이 반영되지는 않아요.",
+    "check": "제품 구성, 기업용·소비자용 비중, 가격과 출하량을 함께 확인해요.",
+    "sources": [
+      {
+        "label": "SK하이닉스 · DRAM과 NAND의 차이",
+        "url": "https://news.skhynix.co.kr/post/dram-and-nand-flash"
+      },
+      {
+        "label": "삼성전자 · 반도체 용어 모음",
+        "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/just-the-essentials-semiconductor-terminologyzip/"
+      }
+    ]
+  },
+  {
+    "id": "foundry",
+    "name": "파운드리",
+    "aliases": [
+      "Foundry",
+      "반도체 위탁생산"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "다른 회사가 설계한 반도체를 주문받아 생산하는 사업이에요. 팹리스는 생산시설 없이 설계에 주력하는 회사를 말해요.",
+    "example": "가상 예: A사가 칩을 설계하고 B사 공장이 제조하면 B사가 파운드리 역할을 해요.",
+    "pitfall": "수주 소식만으로 이익을 알 수 없어요. 생산비용과 수율, 가동률도 중요해요.",
+    "check": "고객·공정·양산 시점·수율 등 공식 설명을 구분해요.",
+    "sources": [
+      {
+        "label": "삼성전자 · 파운드리 사업 설명",
+        "url": "https://semiconductor.samsung.com/kr/news-events/tech-blog/to-be-the-most-trusted-foundry-samsung-foundry-divisions-vision/"
+      }
+    ]
+  },
+  {
+    "id": "yield",
+    "name": "수율",
+    "aliases": [
+      "양품률",
+      "yield"
+    ],
+    "category": "실적·산업",
+    "level": "한 걸음 더",
+    "definition": "만들려고 한 제품 중 기준을 충족하는 정상 제품이 나온 비율이에요.",
+    "example": "가상 계산: 웨이퍼에서 만든 칩 100개 중 정상 칩이 80개라면 해당 기준의 수율은 80%예요.",
+    "pitfall": "검사 단계와 제품이 다르면 숫자를 그대로 비교할 수 없어요. 커뮤니티의 수율 추정은 공식 수치와 달라요.",
+    "check": "제품·공정·검사 단계·측정 시점과 수치의 최초 출처를 확인해요.",
+    "sources": [
+      {
+        "label": "삼성전자 반도체 용어사전 · 수율",
+        "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-yield/"
+      }
+    ]
+  },
+  {
+    "id": "capex",
+    "name": "CAPEX",
+    "aliases": [
+      "CapEx",
+      "설비투자",
+      "캐펙스",
+      "자본적 지출"
+    ],
+    "category": "실적·산업",
+    "level": "한 걸음 더",
+    "definition": "공장이나 장비처럼 여러 해 사용할 자산을 마련하거나 개선하는 투자 지출이에요.",
+    "example": "가상 예: 새 생산장비를 사는 100억원은 장기간 사용할 자산 투자에 해당할 수 있어요.",
+    "pitfall": "투자 발표가 즉시 매출 증가를 뜻하지 않아요. 현금 지출과 감가상각 비용이 잡히는 시점도 달라요.",
+    "check": "투자 기간·목적, 실제 집행액, 생산능력, 현금흐름을 확인해요.",
+    "sources": [
+      {
+        "label": "SK하이닉스 · 설비투자 원칙 설명",
+        "url": "https://news.skhynix.co.kr/shareholder-return-2024/"
+      }
+    ]
+  },
+  {
+    "id": "earnings",
+    "name": "실적",
+    "aliases": [
+      "분기실적",
+      "잠정실적",
+      "실적발표",
+      "어닝"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "회사가 일정 기간 동안 얼마나 팔고 얼마를 남겼는지 등을 보여주는 경영 결과예요.",
+    "example": "읽는 법: 매출액·영업이익·순이익을 따로 보고, 연결·별도 및 분기·누적 기준을 맞춰요.",
+    "pitfall": "매출이 늘어도 적자가 커질 수 있어요. 잠정 발표 수치는 이후 정정될 수 있어요.",
+    "check": "회사 IR 발표와 DART 정기보고서의 같은 기간을 대조해요.",
+    "sources": [
+      {
+        "label": "SK하이닉스 · 분기 경영실적 발표 형식",
+        "url": "https://news.skhynix.co.kr/1q-2025-business-results/"
+      },
+      {
+        "label": "한국은행 · 기업경영분석 교육",
+        "url": "https://www.bok.or.kr/portal/bbs/B0000216/view.do?listType=G&menuNo=20134&nttId=10069022&pageIndex=8"
+      }
+    ]
+  },
+  {
+    "id": "consensus",
+    "name": "컨센서스",
+    "aliases": [
+      "실적 컨센서스",
+      "시장 기대치",
+      "컨센"
+    ],
+    "category": "실적·산업",
+    "level": "한 걸음 더",
+    "definition": "여러 분석기관의 예상치를 일정한 기준으로 모은 값이에요. 실적·경제지표 전망 등에 쓰이며, 실제 발표가 기대를 크게 웃돌면 ‘서프라이즈’라고 부르기도 해요.",
+    "example": "가상 계산: 같은 매출을 90·100·110억원으로 예상한 세 기관의 단순평균은 100억원이에요. 실제 집계 방식은 제공사별로 달라요.",
+    "pitfall": "확정된 사실이나 모든 투자자의 생각은 아니에요. 일부 지표는 단순평균으로 계산하지 않아요.",
+    "check": "집계일·기관 수·기간·회계기준·분포와 제공사의 산식을 확인해요.",
+    "sources": [
+      {
+        "label": "FnGuide · 컨센서스 집계 기준 안내",
+        "url": "https://www.fnguide.com/download/CONSENSUS_USER_GUIDE.pdf"
+      }
+    ]
+  },
+  {
+    "id": "priced-in",
+    "name": "선반영",
+    "aliases": [
+      "이미 반영",
+      "기대감 반영"
+    ],
+    "category": "기업가치",
+    "level": "한 걸음 더",
+    "definition": "미래에 일어날 것으로 기대한 일이 현재 가격에 미리 영향을 줬다고 해석하는 표현이에요. 직접 측정되는 공시 항목은 아니에요.",
+    "example": "읽는 법: 좋은 실적에도 주가가 내렸다면 기존 기대보다 부족했을 가능성 등을 따져보는 해석이에요.",
+    "pitfall": "‘전부 선반영됐다’는 말을 사실처럼 받아들이지 않아요. 가격에는 금리·위험 선호·수급도 영향을 줘요.",
+    "check": "발표 전 기대치, 발표 내용, 같은 기간 시장 흐름을 비교해요.",
+    "sources": [
+      {
+        "label": "한국은행 · 기업 실적과 주가, 수급의 관계",
+        "url": "https://www.bok.or.kr/portal/bbs/B0000217/view.do?listType=G&menuNo=200144&nttId=214400&pageIndex=12"
+      }
+    ]
+  },
+  {
+    "id": "optical-fiber",
+    "name": "광섬유",
+    "aliases": [
+      "optical fiber"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "빛을 통해 정보를 전달하는 가느다란 섬유예요. 통신용은 고순도 유리 등이 쓰이고, 이를 뽑아내는 굵은 원재료가 모재예요.",
+    "example": "읽는 법: 광섬유와 모재는 생산 단계가 달라요. 모재 → 광섬유 → 광케이블로 이어질 수 있어요.",
+    "pitfall": "광섬유 기술 보유가 특정 고객에 대한 납품 확정을 뜻하지는 않아요.",
+    "check": "공식 제품 종류와 실제 사업보고서의 제품별 매출을 확인해요.",
+    "sources": [
+      {
+        "label": "코닝 · 광섬유의 작동 원리",
+        "url": "https://www.corning.com/kr/ko/innovation/the-glass-age/science-of-glass/how-it-works-optical-fiber.html"
+      },
+      {
+        "label": "대한광통신 · 광섬유와 광케이블 기술",
+        "url": "https://www.taihanfiber.com/technology/optical.html"
+      }
+    ]
+  },
+  {
+    "id": "optical-cable",
+    "name": "광케이블",
+    "aliases": [
+      "광통신 케이블",
+      "fiber optic cable"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "광섬유를 보호하고 설치 환경에 맞게 묶어 놓은 케이블이에요. 통신망이나 데이터센터 연결 등에 쓰여요.",
+    "example": "읽는 법: 광섬유가 신호를 보내는 가닥이라면 광케이블은 가닥을 보호해 현장에 설치하는 제품이에요.",
+    "pitfall": "전체 산업 수요 증가와 특정 회사의 수주·수익 증가는 별도 확인이 필요해요.",
+    "check": "케이블 종류, 설치 용도, 수주 공시, 납품 기간을 확인해요.",
+    "sources": [
+      {
+        "label": "대한광통신 · 광섬유와 광케이블 기술",
+        "url": "https://www.taihanfiber.com/technology/optical.html"
+      },
+      {
+        "label": "대한광통신 · 데이터센터용 네트워크 솔루션",
+        "url": "https://www.taihanfiber.com/solutions/data.html"
+      }
+    ]
+  },
+  {
+    "id": "data-center",
+    "name": "데이터센터",
+    "aliases": [
+      "데이터 센터",
+      "IDC"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "서버·저장장치·네트워크 장비와 전력·냉각 설비를 모아 데이터를 처리하고 보관하는 시설이에요.",
+    "example": "읽는 법: AI 데이터센터 투자는 연산칩·메모리·전력·통신망 등 여러 설비 수요와 연결될 수 있어요.",
+    "pitfall": "데이터센터 수요가 늘어도 모든 관련 회사가 계약을 따내는 것은 아니에요.",
+    "check": "실제 공급 제품, 공식 계약, 매출 인식 시점을 확인해요.",
+    "sources": [
+      {
+        "label": "AWS · 데이터센터의 구성",
+        "url": "https://aws.amazon.com/ko/what-is/data-center/"
+      },
+      {
+        "label": "대한광통신 · 데이터센터용 네트워크 솔루션",
+        "url": "https://www.taihanfiber.com/solutions/data.html"
+      }
+    ]
+  },
+  {
+    "id": "yoy",
+    "name": "YoY",
+    "aliases": [
+      "전년 동기 대비",
+      "전년동기대비",
+      "전년비"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "지난해 같은 기간과 비교한다는 뜻이에요. 계절이 비슷한 기간끼리 변화 폭을 볼 때 쓰여요.",
+    "example": "가상 계산: 지난해 2분기 매출 100억원, 올해 2분기 120억원이면 YoY +20%예요.",
+    "pitfall": "기준이 매우 낮으면 증가율이 커 보여요. 적자·흑자 전환은 증가율만으로 해석하기 어려워요.",
+    "check": "기준 기간의 원래 금액과 일회성 요인을 확인해요.",
+    "sources": [
+      {
+        "label": "SK하이닉스 · 분기 경영실적 발표 형식",
+        "url": "https://news.skhynix.co.kr/1q-2025-business-results/"
+      }
+    ]
+  },
+  {
+    "id": "qoq",
+    "name": "QoQ",
+    "aliases": [
+      "전분기 대비",
+      "전분기대비",
+      "전기 대비"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "바로 앞 분기와 비교한다는 뜻이에요. 최근의 변화 속도를 볼 때 쓰여요.",
+    "example": "가상 계산: 1분기 매출 100억원, 2분기 110억원이면 QoQ +10%예요.",
+    "pitfall": "성수기·비수기 효과가 섞일 수 있어요. 전년 동기 비교와 결과가 다를 수 있어요.",
+    "check": "직전 분기 금액, 계절성, YoY 수치를 함께 확인해요.",
+    "sources": [
+      {
+        "label": "SK하이닉스 · 분기 경영실적 발표 형식",
+        "url": "https://news.skhynix.co.kr/1q-2025-business-results/"
+      }
+    ]
+  },
+  {
+    "id": "operating-profit",
+    "name": "영업이익",
+    "aliases": [
+      "영업익",
+      "영익",
+      "OP"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "본업의 매출에서 매출원가와 판매·관리 비용 등을 빼고 남은 이익이에요.",
+    "example": "가상 계산: 매출 100억원 − 매출원가 70억원 − 판매·관리비 20억원 = 영업이익 10억원.",
+    "pitfall": "세금·이자 등까지 반영한 순이익과 다르고, 실제 들어온 현금과도 달라요.",
+    "check": "손익계산서와 사업부별 실적, 현금흐름표를 함께 확인해요.",
+    "sources": [
+      {
+        "label": "한국은행 · 기업경영분석 교육",
+        "url": "https://www.bok.or.kr/portal/bbs/B0000216/view.do?listType=G&menuNo=20134&nttId=10069022&pageIndex=8"
+      },
+      {
+        "label": "SK하이닉스 · 분기 경영실적 발표 형식",
+        "url": "https://news.skhynix.co.kr/1q-2025-business-results/"
+      }
+    ]
+  },
+  {
+    "id": "volume-profile",
+    "name": "매물대",
+    "aliases": [
+      "물량대",
+      "가격대별 거래량"
+    ],
+    "category": "차트",
+    "level": "한 걸음 더",
+    "definition": "선택한 기간 동안 어느 가격대에서 거래가 많이 체결됐는지 보여주는 분포예요.",
+    "example": "읽는 법: 1만원 근처 막대가 길면 선택한 기간에 그 가격대의 거래량이 많았다는 뜻이에요.",
+    "pitfall": "그 가격에 산 사람들이 아직 모두 보유하고 있다는 뜻은 아니에요. 기간을 바꾸면 분포도 달라져요.",
+    "check": "조회 기간, 가격 구간 폭, 수정주가 적용 여부를 확인해요.",
+    "sources": [
+      {
+        "label": "삼성증권 · 차트 유형과 매물대 설명",
+        "url": "https://www.samsungpop.com/contents/popdts/help/1401-6.html"
+      }
+    ]
+  },
+  {
+    "id": "cpi",
+    "name": "CPI",
+    "aliases": [
+      "소비자물가지수"
+    ],
+    "category": "거시경제",
+    "level": "기초",
+    "definition": "소비자가 구입하는 대표적인 상품·서비스 묶음의 가격이 평균적으로 얼마나 변했는지 보여주는 지수예요. 미국 CPI는 BLS가 발표해요.",
+    "example": "읽는 법: 전년 대비 +3%는 평균 가격이 1년 전보다 3% 높다는 뜻이에요. 상승률 둔화와 가격 하락은 달라요.",
+    "pitfall": "전월비와 전년비를 섞지 않아요. 근원 CPI는 식품·에너지를 제외한 지수예요.",
+    "check": "대상 국가, 발표월, 전월비·전년비, 계절조정 여부, 예상치를 확인해요.",
+    "sources": [
+      {
+        "label": "미국 노동통계국(BLS) · CPI 자주 묻는 질문",
+        "url": "https://www.bls.gov/cpi/questions-and-answers.htm"
+      }
+    ]
+  },
+  {
+    "id": "ppi",
+    "name": "PPI",
+    "aliases": [
+      "생산자물가지수",
+      "생산자 물가"
+    ],
+    "category": "거시경제",
+    "level": "한 걸음 더",
+    "definition": "국내 생산자가 상품과 서비스를 팔고 받는 가격의 평균 변화를 보는 지수예요. 미국 PPI는 BLS가 발표해요.",
+    "example": "읽는 법: 미국 최종수요 PPI가 상승했다면 그 분류의 생산자 판매가격이 평균적으로 올랐다는 뜻이에요.",
+    "pitfall": "기업의 모든 원가를 측정하는 지수는 아니에요. CPI에 같은 폭으로 바로 반영되지도 않아요.",
+    "check": "최종수요·중간수요, 서비스·상품, 전월비·전년비, 수정 여부를 확인해요.",
+    "sources": [
+      {
+        "label": "미국 노동통계국(BLS) · PPI 개요",
+        "url": "https://www.bls.gov/ppi/overview.htm"
+      }
+    ]
+  },
+  {
+    "id": "fomc",
+    "name": "FOMC",
+    "aliases": [
+      "연방공개시장위원회",
+      "에프오엠씨"
+    ],
+    "category": "거시경제",
+    "level": "한 걸음 더",
+    "definition": "미국 연방준비제도 안에서 통화정책을 정하는 위원회예요. 정책금리의 목표 범위 등을 결정해요. 연준 전체와 완전히 같은 말은 아니에요.",
+    "example": "읽는 법: ‘FOMC를 기다린다’는 말은 금리 결정과 경제 진단·향후 정책 설명을 살펴보겠다는 뜻이에요.",
+    "pitfall": "회의 때마다 금리가 바뀌지는 않아요. 금리 동결이어도 설명이나 전망은 달라질 수 있어요.",
+    "check": "공식 성명, 경제전망, 기자회견을 구분하고 발표 시각을 확인해요.",
+    "sources": [
+      {
+        "label": "미국 연방준비제도 · FOMC란?",
+        "url": "https://www.federalreserve.gov/faqs/federal-open-market-committee-fomc.htm"
+      }
+    ]
+  },
+  {
+    "id": "policy-rate",
+    "name": "기준금리",
+    "aliases": [
+      "정책금리"
+    ],
+    "category": "거시경제",
+    "level": "기초",
+    "definition": "중앙은행이 통화정책의 기준으로 정하는 금리예요. 한국은행 기준금리와 미국 연방기금금리 목표 범위는 서로 다른 지표예요.",
+    "example": "가상 계산: 3.50%에서 3.25%로 낮추면 0.25%포인트, 즉 25bp 인하예요.",
+    "pitfall": "예금·대출·국채 금리가 모두 즉시 같은 폭으로 움직이는 것은 아니에요. 금리 인하만으로 주가 상승도 보장되지 않아요.",
+    "check": "어느 나라·어떤 금리인지, 변경 폭과 결정 배경을 확인해요.",
+    "sources": [
+      {
+        "label": "한국은행 · 공개시장운영과 기준금리",
+        "url": "https://www.bok.or.kr/portal/bbs/B0000217/view.do?listType=G&menuNo=200144&nttId=10051685&pageIndex=11"
+      },
+      {
+        "label": "미국 연방준비제도 · FOMC란?",
+        "url": "https://www.federalreserve.gov/faqs/federal-open-market-committee-fomc.htm"
+      }
+    ]
+  },
+  {
+    "id": "opening-price",
+    "name": "시초가",
+    "aliases": [
+      "시가",
+      "장 시작 가격",
+      "시초"
+    ],
+    "category": "차트",
+    "level": "기초",
+    "definition": "해당 거래 세션에서 처음 형성된 거래가격이에요. KRX 정규장 시가는 장 시작 단일가매매 등으로 정해져요.",
+    "example": "가상 예: 전날 종가가 1만원이어도 다음 날 첫 거래가 1만500원이면 시초가는 1만500원이에요.",
+    "pitfall": "장전 예상체결가는 확정 시초가가 아니에요. 다른 거래시장·세션의 가격과 섞지 않아요.",
+    "check": "거래시장과 정규장·시간외 구분, 실제 체결 여부를 확인해요.",
+    "sources": [
+      {
+        "label": "한국거래소 · 시가와 단일가매매",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010201/RGL03010201.jsp"
+      }
+    ]
+  },
+  {
+    "id": "fcf",
+    "name": "FCF",
+    "aliases": [
+      "잉여현금흐름",
+      "Free Cash Flow",
+      "프리캐시플로우"
+    ],
+    "category": "기업가치",
+    "level": "한 걸음 더",
+    "definition": "영업에서 얻은 현금에서 설비투자 등을 뺀 뒤 남는 현금을 살펴보는 지표예요. 회사마다 조정 항목과 산식이 달라요.",
+    "example": "가상 계산: 영업현금흐름 100억원 − 설비투자 70억원 = 단순 계산 FCF 30억원.",
+    "pitfall": "순이익이나 통장 잔액과 달라요. FCF 전부가 배당 재원이라는 뜻도 아니에요.",
+    "check": "회사의 FCF 정의, 투자·운전자본 변화, 주주환원 정책의 대상 기간을 확인해요.",
+    "sources": [
+      {
+        "label": "정의·한계 확인 예 · Teradata의 SEC 제출 공시",
+        "url": "https://www.sec.gov/Archives/edgar/data/816761/000081676125000179/tdc06302025exhibit991.htm"
+      }
+    ]
+  },
+  {
+    "id": "dividend-yield",
+    "name": "배당수익률",
+    "aliases": [
+      "배당 수익률"
+    ],
+    "category": "기업가치",
+    "level": "기초",
+    "definition": "주가 대비 주당 배당금의 비율이에요. 학습용 기본식은 연간 주당 배당금 ÷ 주가 × 100이에요.",
+    "example": "가상 계산: 연간 배당 500원, 주가 1만원이면 세전 배당수익률 5%예요.",
+    "pitfall": "원금이 보장되는 이자가 아니에요. 주가가 하락해서 높아질 수도 있어요. 공시 시가배당률은 별도 기준가격을 써요.",
+    "check": "예상·확정 배당, 연간·분기 구분, 분모 주가와 기준일을 확인해요.",
+    "sources": [
+      {
+        "label": "한국거래소 · 투자지표 산출방식",
+        "url": "https://kind.krx.co.kr/external/dst/guidebook/investment_indicators.pdf"
+      }
+    ]
+  },
+  {
+    "id": "shareholder-return",
+    "name": "주주환원",
+    "aliases": [
+      "주주 환원"
+    ],
+    "category": "기업가치",
+    "level": "기초",
+    "definition": "회사가 배당이나 자기주식 매입·소각 등을 통해 주주에게 가치를 돌려주는 정책과 실행을 말해요.",
+    "example": "가상 예: 회사가 현금배당 10억원과 자사주 매입 5억원을 실행했다면 항목별 금액과 처리 방식을 따로 읽어요.",
+    "pitfall": "‘환원율 50%’의 분모가 순이익인지 FCF인지에 따라 의미가 달라요. 발표와 실제 집행도 구분해요.",
+    "check": "기간·분모·배당액·매입 및 소각 진행 결과를 확인해요.",
+    "sources": [
+      {
+        "label": "삼성전자 IR · 주주환원 정책과 FCF",
+        "url": "https://www.samsung.com/sec/ir/stock-information/shareholder-return/"
+      }
+    ]
+  },
+  {
+    "id": "share-buyback",
+    "name": "자사주 매입",
+    "aliases": [
+      "자기주식 취득",
+      "자사주매입",
+      "자사주 매수",
+      "바이백"
+    ],
+    "category": "공시",
+    "level": "한 걸음 더",
+    "definition": "회사가 자기 회사의 주식을 사들이는 일이에요. 회사 현금을 쓰며 취득한 주식은 자기주식이 돼요.",
+    "example": "가상 예: 회사가 시장에서 100주를 사들였다고 해도 그 100주가 바로 소각된 것은 아니에요.",
+    "pitfall": "매입 계획 발표와 취득 완료는 달라요. 매입만으로 주가 상승이나 영구적인 주식 수 감소를 단정하지 않아요.",
+    "check": "취득 목적·방법·기간·완료 수량과 소각 계획을 공시에서 확인해요.",
+    "sources": [
+      {
+        "label": "삼성전자 · 자사주 매입·소각 발표 사례",
+        "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-3%ED%9A%8C%EC%B0%A8-%EC%9E%90%EC%82%AC%EC%A3%BC-%EB%A7%A4%EC%9E%85-%EA%B2%B0%EC%9D%98"
+      },
+      {
+        "label": "삼성전자 IR · 주주환원 정책과 FCF",
+        "url": "https://www.samsung.com/sec/ir/stock-information/shareholder-return/"
+      }
+    ]
+  },
+  {
+    "id": "share-cancellation",
+    "name": "자사주 소각",
+    "aliases": [
+      "자기주식 소각",
+      "주식소각",
+      "소각"
+    ],
+    "category": "공시",
+    "level": "한 걸음 더",
+    "definition": "회사가 보유한 자기주식을 없애 발행주식 수를 줄이는 일이에요.",
+    "example": "가상 예: 발행주식 1,000주 중 보유 자사주 100주를 소각하면 발행주식은 900주가 돼요.",
+    "pitfall": "이미 EPS 계산에서 빠진 자사주를 소각하면 EPS가 그만큼 다시 뛰는 것은 아니에요. 매입과 소각을 두 번의 새 현금 환원처럼 더하지 않아요.",
+    "check": "소각 수량·종류·완료일, 매입 시점과 유통주식 수를 확인해요.",
+    "sources": [
+      {
+        "label": "삼성전자 · 보유 자사주 소각 발표 사례",
+        "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%B3%B4%EC%9C%A0-%EC%A4%91%EC%9D%B8-%EC%9E%90%EC%82%AC%EC%A3%BC-%EC%86%8C%EA%B0%81"
+      }
+    ]
+  },
+  {
+    "id": "risk-reward",
+    "name": "손익비",
+    "aliases": [
+      "위험보상비율",
+      "위험 대비 수익",
+      "리스크 리워드"
+    ],
+    "category": "기업가치",
+    "level": "한 걸음 더",
+    "definition": "한 거래에서 가정하는 이익과 손실의 크기를 비교한 비율이에요. 이 자료는 예상이익 ÷ 예상손실 기준을 사용해요.",
+    "example": "가상 계산: 1만원에 사고 목표 1만2천원, 손실 기준 9천원을 가정하면 이익 2천원 ÷ 손실 1천원 = 2배예요.",
+    "pitfall": "실현 가능성이나 승률을 뜻하지 않아요. 목표가·손실 기준이 바뀌면 비율도 달라지고 실제 손실은 가정치를 넘을 수 있어요.",
+    "check": "분자·분모의 순서, 가격 가정의 근거, 거래비용과 실현 확률을 확인해요.",
+    "sources": [
+      {
+        "label": "CME 거래소 · 손익비와 손실 관리 교육",
+        "url": "https://www.cmegroup.com/education/courses/trade-and-risk-management/the-2-percent-rule"
+      }
+    ]
+  },
+  {
+    "id": "coupling",
+    "name": "커플링",
+    "aliases": [
+      "동조화"
+    ],
+    "category": "수급",
+    "level": "한 걸음 더",
+    "definition": "서로 다른 시장이나 자산이 비슷한 방향으로 움직이는 현상을 부르는 표현이에요. 다르게 움직이는 현상은 디커플링이라고 해요.",
+    "example": "읽는 법: ‘미국과 커플링’은 미국 시장과 같이 움직이는 경향이 있다는 해석이에요. 같은 거래일인지 시차도 살펴봐요.",
+    "pitfall": "과거 동반 움직임은 인과관계나 미래 동조화를 보장하지 않아요. 짧은 차트 두 장만으로 단정하지 않아요.",
+    "check": "비교 자산, 수익률 기준, 관찰 기간·시차, 동조하지 않았던 구간을 확인해요.",
+    "sources": [
+      {
+        "label": "세인트루이스 연방준비은행 · 상관관계와 인과관계 설명",
+        "url": "https://fredblog.stlouisfed.org/2014/07/spurious-correlation/"
+      }
+    ]
+  },
+  {
+    "id": "sep",
+    "name": "SEP · 경제전망",
+    "aliases": [
+      "SEP",
+      "경제전망 요약"
+    ],
+    "category": "거시경제",
+    "level": "한 걸음 더",
+    "definition": "FOMC 참가자 각자의 성장률·실업률·물가·적절한 정책금리 전망을 모은 자료예요. 점도표는 참가자들이 판단한 적정 정책금리 수준을 점으로 표시해요.",
+    "example": "읽는 법: 같은 연도의 점들이 넓게 흩어져 있으면 참가자별 판단 차이가 크다는 뜻이에요. 중앙값과 분포를 함께 읽어요.",
+    "pitfall": "매 FOMC마다 발표하지 않으며 통상 3·6·9·12월에 나와요. 점도표는 금리 결정 약속이나 정확한 미래 경로가 아니에요.",
+    "check": "공식 발표 일정, 전망 대상 연도, 직전 전망 대비 변화와 불확실성 설명을 확인해요.",
+    "sources": [
+      {
+        "label": "미국 연방준비제도 · SEP 읽는 법",
+        "url": "https://www.federalreserve.gov/monetarypolicy/guide-to-the-summary-of-economic-projections.htm"
+      }
+    ]
+  },
+  {
+    "id": "abc-correction",
+    "name": "ABC 조정",
+    "aliases": [
+      "ABC 조정파",
+      "A·B·C 조정",
+      "ABC"
+    ],
+    "category": "차트",
+    "level": "한 걸음 더",
+    "definition": "엘리어트 파동 등 일부 기술분석에서 큰 추세와 반대되는 조정 움직임을 A·B·C로 나누어 해석하는 방식이에요.",
+    "example": "가상 예: 상승 뒤 하락 → 반등 → 재하락을 관찰자가 A·B·C로 표시할 수 있어요. 이것은 해당 차트에 붙인 분석 가설이에요.",
+    "pitfall": "조정이 언제나 세 구간으로 끝나거나 이후 반드시 반등한다는 뜻은 아니에요. 파동을 고른 기준과 해석이 틀릴 수 있어요.",
+    "check": "차트 기간, 파동 시작·끝의 근거, 가설이 틀렸다고 볼 조건을 확인해요.",
+    "sources": [
+      {
+        "label": "Fidelity 제공 · Ryan Henry의 엘리어트 파동 교육 원문",
+        "url": "https://www.fidelity.com/bin-public/060_www_fidelity_com/documents/ManageTradesElliotWave_620097.2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "optical-communication",
+    "name": "광통신",
+    "aliases": [
+      "광 통신",
+      "optical communication"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "정보를 빛의 신호로 바꾸어 전달하는 통신 방식이에요. 광섬유·광케이블은 이를 구현하는 전송 매체와 제품에 해당해요.",
+    "example": "읽는 법: 광통신 산업에는 케이블뿐 아니라 빛을 송수신하는 부품과 장비 등 서로 다른 사업이 포함될 수 있어요.",
+    "pitfall": "같은 광통신 관련 기업이어도 제품·고객·이익 구조는 달라요. 광통신과 광케이블을 같은 뜻으로 읽지 않아요.",
+    "check": "각 회사의 실제 제품, 고객군, 매출 비중을 사업보고서와 제품 안내에서 확인해요.",
+    "sources": [
+      {
+        "label": "코닝 · 광섬유와 광신호의 전달 원리",
+        "url": "https://www.corning.com/kr/ko/innovation/the-glass-age/science-of-glass/how-it-works-optical-fiber.html"
+      },
+      {
+        "label": "대한광통신 · 제품과 기술 안내",
+        "url": "https://www.taihanfiber.com/technology/optical.html"
+      }
+    ]
+  }
+]
