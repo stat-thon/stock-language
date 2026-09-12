@@ -3325,6 +3325,10 @@
       {
         "label": "Cisco · 800G 광트랜시버 사양과 용도",
         "url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/osfp-800g-transceiver-modules-ds.html"
+      },
+      {
+        "label": "Cisco · 광트랜시버의 신호 변환 원리 (백서 3–4쪽)",
+        "url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/silicon-photonics-wp.pdf"
       }
     ],
     "addedAt": "2026-09-12"
@@ -3594,5 +3598,99 @@
       }
     ],
     "addedAt": "2026-09-12"
+  },
+  {
+    "id": "vie",
+    "name": "VIE",
+    "aliases": [
+      "Variable Interest Entity",
+      "변동지분기업",
+      "변동지분실체"
+    ],
+    "category": "공시",
+    "level": "심화",
+    "definition": "미국 회계기준의 기업 분류입니다. 예를 들어 자본 구조상 위험을 부담할 자기자본이 부족해 후순위 자금지원이 필요하거나, 출자자에게 중요한 활동을 결정할 권한 등 지배 특성이 없을 때 해당할 수 있습니다. 후순위 지원은 다른 채권자보다 손실을 먼저 떠안을 수 있는 자금입니다.",
+    "example": "학습용 예문(가상): A사가 B사 지분을 30%만 보유해도 B사가 VIE이고 A사의 계약상 권한과 경제적 이해관계가 요건을 충족하면 A사의 연결 대상이 될 수 있다.",
+    "pitfall": "VIE는 연결회계의 동의어가 아닙니다. 적자가 났다는 이유만으로 VIE가 되지도 않습니다. 채용 글에 이 말이 있어도 실제 VIE 보유나 신규 자금조달 계획이 확인된 것은 아닙니다.",
+    "check": "누가 경제적 성과에 가장 큰 영향을 주는 활동을 지시하나요? 그 주체가 해당 기업에 중요할 수 있는 손실을 부담하거나 효익을 받을 권리도 갖나요? 두 요건을 갖춘 주요 수익자(primary beneficiary)가 연결하는지 주석에서 확인하세요.",
+    "sources": [
+      {
+        "label": "FASB · ASU 2015-02, VIE 연결 판단 및 분류 요건(본문 10·20–21쪽)",
+        "url": "https://storage.fasb.org/ASU%202015-02.pdf"
+      }
+    ],
+    "addedAt": "2026-09-13"
+  },
+  {
+    "id": "us-gaap",
+    "name": "US GAAP",
+    "aliases": [
+      "U.S. GAAP",
+      "미국 회계기준",
+      "미국 일반적으로 인정된 회계원칙"
+    ],
+    "category": "공시",
+    "level": "중급",
+    "definition": "미국에서 일반적으로 인정되는 회계원칙입니다. 기업 재무제표에서 거래를 언제, 어떤 금액으로 기록하고 어떻게 표시·설명할지 정합니다. 비정부 기업에는 FASB의 회계기준 체계가 핵심이며 SEC 등록 기업에는 관련 SEC 규정도 적용됩니다.",
+    "example": "학습용 예문(가상): 미국 A사의 US GAAP 순이익과 다른 기준을 쓰는 B사의 순이익을 비교하기 전에 적용 기준과 중요한 회계정책을 읽자.",
+    "pitfall": "GAAP라는 약자만으로 모든 나라의 회계기준을 미국 기준이라고 보면 안 됩니다. US GAAP와 IFRS는 별개의 체계이며, 어느 하나가 항상 이익을 더 크게 만드는 것도 아닙니다.",
+    "check": "감사보고서와 재무제표 작성 기준에 US GAAP라고 적혀 있나요? 비교하는 수치의 회계기준·기간·연결 범위가 같나요?",
+    "sources": [
+      {
+        "label": "FASB · 공식 회계기준과 Codification의 지위",
+        "url": "https://fasb.org/Page/PageContent?PageId=%2Fstaticpages%2Fstandards.html"
+      },
+      {
+        "label": "FASB · GAAP의 인식·측정·표시·공시 역할(개념과 기준 특별보고서)",
+        "url": "https://storage.fasb.org/FASB_Special_Report-The_Framework_of_Financial_Accounting_Concepts_and_StandardsConceptual_Framework.pdf"
+      }
+    ],
+    "addedAt": "2026-09-13"
+  },
+  {
+    "id": "ifrs",
+    "name": "IFRS",
+    "aliases": [
+      "IFRS Accounting Standards",
+      "국제회계기준",
+      "International Financial Reporting Standards"
+    ],
+    "category": "공시",
+    "level": "중급",
+    "definition": "이 문맥에서는 국제회계기준위원회(IASB)가 개발·발행하는 회계기준을 뜻합니다. 기업의 거래와 재무상태를 일관된 원칙으로 기록하고 설명해 투자자와 채권자가 이해·비교하도록 돕습니다.",
+    "example": "학습용 예문(가상): IFRS로 보고한 A사와 US GAAP로 보고한 B사의 이익 차이가 사업 성과 때문인지 회계처리 차이 때문인지 주석을 확인하자.",
+    "pitfall": "IFRS는 감사의견이나 실적 지표가 아닙니다. 같은 기준을 사용해도 추정과 회계정책을 살펴야 합니다. IFRS 회계기준과 IFRS 지속가능성 공시기준도 구분합니다.",
+    "check": "재무제표가 어느 기준을 적용했다고 명시하나요? 전년과 회계정책·추정이 달라졌는지, 비교 회사와 연결 범위가 같은지도 확인하세요.",
+    "sources": [
+      {
+        "label": "IFRS 재단 · IASB의 회계기준 개발·발행 역할",
+        "url": "https://www.ifrs.org/groups/international-accounting-standards-board/"
+      },
+      {
+        "label": "IFRS 재단 · 회계기준과 지속가능성 공시기준의 구분",
+        "url": "https://www.ifrs.org/about-us/who-we-are/"
+      }
+    ],
+    "addedAt": "2026-09-13"
+  },
+  {
+    "id": "financial-reporting",
+    "name": "재무보고",
+    "aliases": [
+      "Financial reporting"
+    ],
+    "category": "공시",
+    "level": "기초",
+    "definition": "투자자·채권자 등이 기업을 판단할 수 있도록 재무상태와 성과 등의 정보를 전달하는 일입니다. 재무제표의 숫자뿐 아니라 적용한 회계정책과 중요한 판단을 설명하는 주석도 함께 읽습니다.",
+    "example": "학습용 예문(가상): 순이익이 10억 원이라는 숫자만 읽지 말고, 현금흐름과 주석을 함께 살펴 이익이 어떻게 만들어졌는지 확인하자.",
+    "pitfall": "재무보고 업무를 담당할 사람을 뽑는다는 사실만으로 상장·인수·자금조달 일정이 확정됐다고 볼 수 없습니다. 회계처리·보고와 거래의 실행은 서로 다른 일입니다.",
+    "check": "문서가 실제 거래를 공시하나요, 앞으로 수행할 업무를 설명하나요? 보고 주체·기간·기준을 확인하고 거래의 확정 여부는 해당 공시로 따로 확인하세요.",
+    "sources": [
+      {
+        "label": "IFRS 재단 · 재무보고 개념체계의 목적·인식·측정·공시",
+        "url": "https://www.ifrs.org/issued-standards/list-of-standards/conceptual-framework/"
+      }
+    ],
+    "addedAt": "2026-09-13"
   }
 ]

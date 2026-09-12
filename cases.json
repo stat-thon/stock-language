@@ -1,5 +1,87 @@
 [
   {
+    "id": "case-15",
+    "stock": "000660",
+    "title": "VIE·US GAAP·IFRS, 회계 업무의 약자를 풀어 읽기",
+    "excerpt": "연결회계(VIE), US GAAP/IFRS 및 재무보고 등이 포함",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321659552",
+    "terms": [
+      "consolidated-financials",
+      "vie",
+      "us-gaap",
+      "ifrs",
+      "financial-reporting"
+    ],
+    "category": "공시",
+    "claimType": "업무 소개",
+    "explanation": "작성자가 채용공고의 회계·보고 업무를 요약한 문장이에요. 연결회계는 지배하는 기업들을 한 집단으로 보고 재무제표를 작성하는 일이고, VIE는 미국 회계기준에서 연결 여부를 판단할 때 쓰는 기업 분류예요. VIE를 연결회계 전체와 같은 뜻으로 읽으면 안 돼요. US GAAP와 IFRS는 서로 다른 회계기준이고, 재무보고는 재무상태·성과 등의 정보를 전달하는 일이에요. 업무 목록에 이 말들이 있다는 설명만으로 실제 VIE 보유나 자금조달 계획이 확인된 것은 아니에요.",
+    "reason": "그럴듯한 약자들이 나열돼 있어도 각각이 회계기준인지, 기업 분류인지, 업무 이름인지 나눠 읽는 연습이에요.",
+    "checks": [
+      {
+        "question": "VIE와 연결회계를 같은 말로 읽지 않았나요?",
+        "detail": "VIE는 연결 판단에 쓰이는 미국 기준의 분류예요. 중요한 활동을 지시할 권한과 중요할 수 있는 손실 부담·효익에 대한 경제적 이해관계를 함께 살펴 주요 수익자가 연결하는지 판단해요. 발췌의 괄호는 정확한 동의어 표시가 아니에요.",
+        "label": "FASB · VIE 연결 판단을 설명하는 기준 개정 문서",
+        "url": "https://storage.fasb.org/ASU%202015-02.pdf"
+      },
+      {
+        "question": "어느 회계기준으로 작성한 수치인가요?",
+        "detail": "US GAAP와 IFRS는 별도의 기준 체계예요. 회사 간 실적을 비교할 때는 적용 기준·기간·연결 범위를 먼저 맞춰 읽어요. IFRS 회계기준은 IASB가 개발·발행합니다.",
+        "label": "IFRS 재단 · IASB의 역할",
+        "url": "https://www.ifrs.org/groups/international-accounting-standards-board/"
+      },
+      {
+        "question": "채용 업무 설명과 실제 거래 공시를 구분했나요?",
+        "detail": "공식 채용 사이트의 직무·날짜와 공고 원문을 확인하고, 자금조달·지분거래 실행은 별도 공시로 확인해야 해요. 여기서는 커뮤니티 문장을 읽었으며 채용공고 자체의 진위나 거래 계획은 검증하지 않았어요."
+      }
+    ],
+    "caution": "VIE는 적자 기업의 별명이나 상장·인수의 신호가 아니에요. 이 사례는 회계 용어 학습용이며, 특정 기업의 회계 구조나 향후 거래를 입증하지 않아요.",
+    "publishedAt": "수집 당시 표시: 33분 · 개별 글 재확인: 37분",
+    "collectedAt": "2026-09-13 (한국시간)",
+    "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
+    "sourceNote": "공유 링크에서 개별 글 주소를 확보하고 동일한 본문을 다시 확인했습니다.",
+    "editorialTitle": true
+  },
+  {
+    "id": "case-14",
+    "stock": "010170",
+    "title": "광케이블과 광트랜시버, 같은 제품일까",
+    "excerpt": "대광이는 광섬유 광케이블 회사지\n광트랜시버회사가아닙니다",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321650708",
+    "terms": [
+      "optical-fiber",
+      "optical-cable",
+      "optical-transceiver"
+    ],
+    "category": "실적·산업",
+    "claimType": "사업 구분",
+    "explanation": "‘대광이’는 이 글에서 대한광통신을 가리켜요. 광섬유는 빛을 전달하는 가닥, 광케이블은 그 가닥을 보호해 설치할 수 있게 만든 제품이에요. 광트랜시버는 전기 신호를 빛으로 바꿔 보내고 받은 빛을 전기 신호로 바꾸는 송수신 장치예요. 대한광통신 공식 자료에서는 모재·광섬유·광케이블 생산을 확인할 수 있어요. 다만 공식 제품 목록만으로 다른 사업이 전혀 없다고 단정할 수는 없어요.",
+    "reason": "같은 광통신 분야라도 제품의 역할과 회사가 실제로 파는 물건을 구분하는 연습이에요.",
+    "checks": [
+      {
+        "question": "빛을 전달하는 제품인가요, 신호를 바꾸는 장치인가요?",
+        "detail": "광섬유·광케이블은 전송 경로이고, 광트랜시버는 송수신 과정에서 전기 신호와 광 신호를 변환해요. 이름에 ‘광’이 들어간다고 같은 제품은 아니에요.",
+        "label": "Cisco · 광트랜시버의 역할 (백서 3–4쪽)",
+        "url": "https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/silicon-photonics-wp.pdf"
+      },
+      {
+        "question": "회사의 실제 공급 품목과 매출 비중을 확인했나요?",
+        "detail": "공식 기술 안내에는 모재부터 광케이블까지의 생산 과정이 나와요. 사업의 범위와 규모는 제품 안내와 최신 사업보고서의 제품별 매출을 함께 확인해요.",
+        "label": "대한광통신 · 광섬유·광케이블 기술",
+        "url": "https://www.taihanfiber.com/technology/optical.html"
+      },
+      {
+        "question": "제품 구분만으로 규제의 수혜를 결론 내릴 수 있나요?",
+        "detail": "원글은 수입규제 이야기와 연결하지만, 여기서는 규제의 존재·대상품목·시행일이나 대체 물량·계약을 검증하지 않았어요. 공식 규제 문서와 회사의 실제 계약을 별도로 확인해야 해요."
+      }
+    ],
+    "caution": "광섬유·광케이블 생산은 공식 자료로 확인했지만, 원문의 회사 분류 전체나 규제로 인한 수주·실적 효과까지 입증한 것은 아니에요.",
+    "publishedAt": "수집 당시 표시: 5시간",
+    "collectedAt": "2026-09-13 (한국시간)",
+    "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
+    "sourceNote": "공유 링크에서 개별 글 주소를 확보하고 동일한 본문을 다시 확인했습니다.",
+    "editorialTitle": true
+  },
+  {
     "id": "case-10",
     "stock": "000660",
     "title": "출하 확대와 가격 상승, 이익은 어떻게 연결될까",

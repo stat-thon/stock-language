@@ -119,5 +119,25 @@
     "topic": "market-alert",
     "context": "투자주의 해제 여부를 묻는 질문. 줄임말 해석과 거래소 공시 확인 방법의 사례로 선별. 실제 종목 지정 상태는 확인하지 않았음. 최신순에서 확인.",
     "sourceUrl": "https://www.tossinvest.com/stocks/A010170/community"
+  },
+  {
+    "stock": "010170",
+    "title": "광케이블과 광트랜시버, 같은 제품일까",
+    "excerpt": "대광이는 광섬유 광케이블 회사지\n광트랜시버회사가아닙니다",
+    "date": "5시간",
+    "collectedAt": "2026-09-13 (한국시간)",
+    "topic": "optical-fiber · optical-cable · optical-transceiver",
+    "context": "2026-09-13 00:05–00:07 KST 대한광통신 최신순에서 읽은 ‘중국산 광트랜시버규제’ 글 일부. 실제 공급 제품을 구분하는 부분만 발췌. 원문의 수입규제·대체물량·호재 추측은 미검증으로 구분하며 인용에서 제외. 00:14 KST 공유 버튼으로 단축 주소를 복사한 뒤 Safari 주소창에 붙여 열어 개별 글 주소와 본문을 재확인.",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321650708"
+  },
+  {
+    "stock": "000660",
+    "title": "VIE·US GAAP·IFRS, 회계 업무의 약자를 풀어 읽기",
+    "excerpt": "연결회계(VIE), US GAAP/IFRS 및 재무보고 등이 포함",
+    "date": "최초 확인 33분 · 개별 글 재확인 37분",
+    "collectedAt": "2026-09-13 (한국시간)",
+    "topic": "consolidated-financials · vie · us-gaap · ifrs · financial-reporting",
+    "context": "2026-09-13 00:10–00:15 KST 하이닉스 최신순에서 ‘솔리다임 신규채용 공고 떴네’ 글을 읽고 공유 링크로 개별 글 재확인. 채용 업무 목록 중 회계 약자 부분만 발췌. VIE를 연결회계의 동의어로 보는 오해와 채용 업무에서 실제 거래를 추론하는 비약을 구분. 채용공고 진위·실제 VIE·자금조달 계획 미검증.",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321659552"
   }
 ]
