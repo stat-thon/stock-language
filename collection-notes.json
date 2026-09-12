@@ -79,5 +79,45 @@
     "topic": "FOMC·기준금리·SEP",
     "context": "경제지표 및 주요 일정 안내 글 일부. 실제 날짜 인용 제외. FOMC 매회의 SEP 있는 것은 아니므로 분기전망회의인지 확인 강조.",
     "sourceUrl": "https://www.tossinvest.com/stocks/A000660/community"
+  },
+  {
+    "stock": "000660",
+    "title": "출하 확대와 가격 상승, 이익은 어떻게 연결될까",
+    "excerpt": "4분기는 HBM4 출하 확대에 일반 DRAM이랑 NAND 가격 상승까지 계속된다고 보면",
+    "date": "2시간",
+    "collectedAt": "2026-09-12 (한국시간)",
+    "topic": "hbm · dram · nand · asp",
+    "context": "자사주이벤트를 다룬 하이닉스 장문 글 중 제품·물량·가격에 관한 조건부 전망만 발췌. 구체적 이익·목표주가·매매 권고 제외. 인기순 화면에서 확인.",
+    "sourceUrl": "https://www.tossinvest.com/stocks/A000660/community"
+  },
+  {
+    "stock": "005930",
+    "title": "상승한 종목이 적으면 숏커버일까",
+    "excerpt": "몇 종목만 오르면 숏커버일 수 있고,",
+    "date": "4시간 · 본문 기준시각 2026-09-12 07:47 KST",
+    "collectedAt": "2026-09-12 (한국시간)",
+    "topic": "short-covering · short-selling · supply-demand",
+    "context": "9월12일 아침 시장 정리 글 중 반도체 상승의 원인을 숏커버로 추정하는 부분. 기존 case-08과 같은 글이지만 별개의 논점이며 두 발췌 합계 19단어. 인기순 화면에서 확인.",
+    "sourceUrl": "https://www.tossinvest.com/stocks/A005930/community"
+  },
+  {
+    "stock": "010170",
+    "title": "ECOC 행사 소식이 특정 기업의 실적을 보장할까",
+    "excerpt": "원래 과거엔 ECOC 행사의 핵심이 단순 통신 분야였는데 올해 ECOC의 핵심은 AI 데이터센터입니다.",
+    "date": "14시간",
+    "collectedAt": "2026-09-12 (한국시간)",
+    "topic": "ecoc · data-center · optical-communication",
+    "context": "ECOC 2026 행사 글 중 AI 데이터센터를 강조하는 평가. 매수 권고·시장 성장 수치 제외. 인기순과 최신순 화면에서 같은 글 재확인.",
+    "sourceUrl": "https://www.tossinvest.com/stocks/A010170/community"
+  },
+  {
+    "stock": "010170",
+    "title": "‘투주 해제’는 어떤 공시에서 확인할까",
+    "excerpt": "투주해제가 된건가요?",
+    "date": "13시간",
+    "collectedAt": "2026-09-12 (한국시간)",
+    "topic": "market-alert",
+    "context": "투자주의 해제 여부를 묻는 질문. 줄임말 해석과 거래소 공시 확인 방법의 사례로 선별. 실제 종목 지정 상태는 확인하지 않았음. 최신순에서 확인.",
+    "sourceUrl": "https://www.tossinvest.com/stocks/A010170/community"
   }
 ]
