@@ -38,8 +38,11 @@
     "publishedAt": "수집 당시 표시: 33분 · 개별 글 재확인: 37분",
     "collectedAt": "2026-09-13 (한국시간)",
     "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
-    "sourceNote": "공유 링크에서 개별 글 주소를 확보하고 동일한 본문을 다시 확인했습니다.",
-    "editorialTitle": true
+    "sourceNote": "공유 링크로 개별 글을 열어 작성자와 기존 발췌를 대조했습니다. 위 맥락 설명은 직접 작성한 학습용 요약이며 원문 인용이 아닙니다. 원문에 담긴 사실 주장과 전망의 진위까지 확인한 것은 아닙니다.",
+    "editorialTitle": true,
+    "postSummary": "작성자는 솔리다임의 신규 채용공고를 봤다며 회계 직무가 다루는 업무를 짧게 소개합니다. 복잡한 거래의 회계처리 검토부터 지분 투자, 부채·자본을 통한 자금 마련, 연결 판단, 미국·국제 회계기준에 따른 보고까지 업무 범위가 넓다는 내용입니다. 공고의 원문 링크나 실제 거래 내역은 본문에 제시하지 않아, 이 글만으로 회사가 특정 투자·차입을 실행한다고 판단할 수는 없습니다.",
+    "sourceAuthor": "fIow",
+    "sourceVerifiedAt": "2026-09-13 (한국시간)"
   },
   {
     "id": "case-14",
@@ -78,8 +81,11 @@
     "publishedAt": "수집 당시 표시: 5시간",
     "collectedAt": "2026-09-13 (한국시간)",
     "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
-    "sourceNote": "공유 링크에서 개별 글 주소를 확보하고 동일한 본문을 다시 확인했습니다.",
-    "editorialTitle": true
+    "sourceNote": "공유 링크로 개별 글을 열어 작성자와 기존 발췌를 대조했습니다. 위 맥락 설명은 직접 작성한 학습용 요약이며 원문 인용이 아닙니다. 원문에 담긴 사실 주장과 전망의 진위까지 확인한 것은 아닙니다.",
+    "editorialTitle": true,
+    "postSummary": "작성자는 중국산 광트랜시버의 미국 수입규제 여부를 다룬 기사가 커뮤니티에 퍼지는 상황에서, 대한광통신의 광섬유·광케이블 사업과 광트랜시버 제조를 구분해야 한다고 주장합니다. 이어 관련 업체에 미칠 영향과 대한광통신이 대체 물량을 얻을 가능성을 추측하며, 실제 제품을 알고 투자해야 한다고 말합니다. 다만 기사 원문·규제 문서·공급계약은 제시하지 않아, 규제의 정확한 내용이나 수혜 여부까지 확인된 글은 아닙니다.",
+    "sourceAuthor": "시원한양231",
+    "sourceVerifiedAt": "2026-09-13 (한국시간)"
   },
   {
     "id": "case-10",
@@ -121,7 +127,7 @@
     "stock": "005930",
     "title": "상승한 종목이 적으면 숏커버일까",
     "excerpt": "몇 종목만 오르면 숏커버일 수 있고,",
-    "sourceUrl": "https://www.tossinvest.com/stocks/A005930/community",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321628828",
     "terms": [
       "short-covering",
       "short-selling",
@@ -147,15 +153,21 @@
     "publishedAt": "수집 당시 표시: 4시간 · 본문 기준시각 2026-09-12 07:47 KST",
     "collectedAt": "2026-09-12 (한국시간)",
     "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
-    "sourceNote": "개별 글 링크 미확보 · 링크는 종목 피드입니다. ‘좋은 뉴스와 좋은 매수가격’ 사례와 같은 글에서 다른 논점을 짧게 발췌했습니다.",
-    "editorialTitle": true
+    "sourceNote": "공유 링크로 개별 글을 열어 작성자와 기존 발췌를 대조했습니다. 위 맥락 설명은 직접 작성한 학습용 요약이며 원문 인용이 아닙니다. 원문에 담긴 사실 주장과 전망의 진위까지 확인한 것은 아닙니다. 로그인이 필요한 마지막 문단은 확인하지 못해 공개된 부분만 요약했습니다. case-08·case-11은 같은 원글의 서로 다른 논점입니다.",
+    "editorialTitle": true,
+    "sourceShareUrl": "https://tossinvest.com/_ul/kEjHUA",
+    "samePostGroup": "morning-news-2026-09-12",
+    "postSummaryScope": "partial",
+    "postSummary": "공개된 부분에서 작성자는 한국 증시의 하락과 이후 미국 증시의 반등을 비교하며 다음 한국 거래일의 업종별 반등 가능성을 논합니다. 금리·물가·유가와 연준 발언을 위험 변수로 두면서 반도체·전력기기·자동차를 구분해 설명합니다. 일부 반도체 종목만 상승하면 숏커버일 수 있다고 추정하고, 이미 많이 오른 다른 업종은 좋은 뉴스가 가격에 반영됐는지 살펴야 한다고 강조합니다. 두 학습 사례는 한 원글의 서로 다른 논점입니다. 개별 페이지에서도 마지막 문단을 펼치려면 로그인이 필요해 결론의 끝부분은 확인하지 못했으며, 요약은 공개된 범위에 한정합니다.",
+    "sourceAuthor": "고미리레",
+    "sourceVerifiedAt": "2026-09-13 (한국시간)"
   },
   {
     "id": "case-12",
     "stock": "010170",
     "title": "ECOC 행사 소식이 특정 기업의 실적을 보장할까",
     "excerpt": "원래 과거엔 ECOC 행사의 핵심이 단순 통신 분야였는데 올해 ECOC의 핵심은 AI 데이터센터입니다.",
-    "sourceUrl": "https://www.tossinvest.com/stocks/A010170/community",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321501618",
     "terms": [
       "ecoc",
       "data-center",
@@ -181,15 +193,19 @@
     "publishedAt": "수집 당시 표시: 14시간",
     "collectedAt": "2026-09-12 (한국시간)",
     "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
-    "sourceNote": "개별 글 링크 미확보 · 링크는 종목 피드로 연결됩니다.",
-    "editorialTitle": true
+    "sourceNote": "공유 링크로 개별 글을 열어 작성자와 기존 발췌를 대조했습니다. 위 맥락 설명은 직접 작성한 학습용 요약이며 원문 인용이 아닙니다. 원문에 담긴 사실 주장과 전망의 진위까지 확인한 것은 아닙니다.",
+    "editorialTitle": true,
+    "sourceShareUrl": "https://tossinvest.com/_ul/kETHKD",
+    "postSummary": "작성자는 ECOC 2026의 개최 시기와 여러 해외 광통신·반도체 기업의 참가를 소개하며, 행사에서 AI 데이터센터와 광통신의 연관성이 주목받을 것으로 예상합니다. 이어 산업 규모가 앞으로 크게 늘어날 것이라는 전망을 근거로 대한광통신의 장기 보유와 추가 매수에 긍정적인 의견을 덧붙입니다. 본문에는 전망을 뒷받침하는 전문가 보고서나 대한광통신의 참가·계약 자료가 없어, 행사 소개와 개별 종목에 대한 투자 의견을 나눠 읽어야 합니다.",
+    "sourceAuthor": "대한화",
+    "sourceVerifiedAt": "2026-09-13 (한국시간)"
   },
   {
     "id": "case-13",
     "stock": "010170",
     "title": "‘투주 해제’는 어떤 공시에서 확인할까",
     "excerpt": "투주해제가 된건가요?",
-    "sourceUrl": "https://www.tossinvest.com/stocks/A010170/community",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321555072",
     "terms": [
       "market-alert"
     ],
@@ -213,8 +229,12 @@
     "publishedAt": "수집 당시 표시: 13시간",
     "collectedAt": "2026-09-12 (한국시간)",
     "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
-    "sourceNote": "개별 글 링크 미확보 · 링크는 종목 피드로 연결됩니다.",
-    "editorialTitle": true
+    "sourceNote": "공유 링크로 개별 글을 열어 작성자와 기존 발췌를 대조했습니다. 위 맥락 설명은 직접 작성한 학습용 요약이며 원문 인용이 아닙니다. 원문에 담긴 사실 주장과 전망의 진위까지 확인한 것은 아닙니다.",
+    "editorialTitle": true,
+    "sourceShareUrl": "https://tossinvest.com/_ul/kEjHMA",
+    "postSummary": "작성자는 대한광통신의 ‘투주’가 해제됐는지 묻습니다. 짧은 질문 한 문장으로, 해제 사실을 알리는 글이나 근거 자료는 아닙니다. ‘투주’가 어떤 시장경보를 뜻하는지 먼저 풀어 읽고, 지정·해제 여부는 해당 종목의 거래소 공시에서 따로 확인해야 합니다.",
+    "sourceAuthor": "빠른얼룩말277",
+    "sourceVerifiedAt": "2026-09-13 (한국시간)"
   },
   {
     "stock": "000660",
@@ -254,7 +274,7 @@
     "stock": "005930",
     "title": "물가가 예상과 같아도 금리 이야기가 나오는 이유",
     "excerpt": "CPI·PPI가 예상치에 대체로 부합했지만 물가 수준은 여전히 높음.",
-    "sourceUrl": "https://www.tossinvest.com/stocks/A005930/community",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321630838",
     "terms": [
       "cpi",
       "ppi",
@@ -283,8 +303,12 @@
     "publishedAt": "수집 당시 표시: 2시간 (수정됨)",
     "collectedAt": "2026-09-12 (한국시간)",
     "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
-    "sourceNote": "개별 글 링크 미확보 · 링크는 종목 피드로 연결됩니다.",
-    "editorialTitle": true
+    "sourceNote": "공유 링크로 개별 글을 열어 작성자와 기존 발췌를 대조했습니다. 위 맥락 설명은 직접 작성한 학습용 요약이며 원문 인용이 아닙니다. 원문에 담긴 사실 주장과 전망의 진위까지 확인한 것은 아닙니다.",
+    "editorialTitle": true,
+    "sourceShareUrl": "https://tossinvest.com/_ul/kEjHQA",
+    "postSummary": "작성자는 물가가 예상에 대체로 맞았어도 높은 수준이어서 금리 인상 가능성이 커졌다고 해석합니다. 동시에 국채금리가 이미 상승했고 추가 인상은 제한될 것이라는 기대가 주가를 지탱한다고 주장하며, 이번 금리 결정보다 이후 경로에 관한 발언을 중요하게 봅니다. 끝부분에는 한국거래소 애프터마켓 도입과 장 종료 뒤 변동성에 관한 설명도 덧붙입니다. 물가에 대한 해석, 시장의 기대에 대한 추정, 거래제도에 관한 사실 주장을 나눠 읽어야 하며, 이번 대조에서는 이 주장들의 사실 여부까지 검증하지 않았습니다.",
+    "sourceAuthor": "참한녀2",
+    "sourceVerifiedAt": "2026-09-13 (한국시간)"
   },
   {
     "stock": "010170",
@@ -314,8 +338,10 @@
     "publishedAt": "수집 당시 표시: 20시간 (수정됨)",
     "collectedAt": "2026-09-12 (한국시간)",
     "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
-    "sourceNote": "개별 글 링크 미확보 · 링크는 종목 피드로 연결됩니다.",
-    "editorialTitle": true
+    "sourceNote": "2026-09-13 원문 작성자·본문을 다시 찾았으나 공유 버튼에 “링크를 복사할 수 없는 글이에요”가 표시되어 개별 글 링크를 확보하지 못했습니다. 이 주소는 종목 커뮤니티 피드입니다. 짧은 인용과 용어 해석만 제공하며 전체 맥락 요약은 보류했습니다.",
+    "editorialTitle": true,
+    "sourceAuthor": "maeveeverr",
+    "sourceVerifiedAt": "2026-09-13 (한국시간)"
   },
   {
     "stock": "000660",
@@ -355,7 +381,7 @@
     "stock": "005930",
     "title": "FCF가 늘면 배당도 그만큼 늘어날까",
     "excerpt": "FCF 역시 200조 이상을 기대해볼 만한 그림임\n…\n지금 주가 26만원 근처 기준으로 보면 배당수익률만 대략 4퍼 후반 정도 나옴",
-    "sourceUrl": "https://www.tossinvest.com/stocks/A005930/community",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321635436",
     "terms": [
       "fcf",
       "dividend-yield",
@@ -384,14 +410,18 @@
     "publishedAt": "수집 당시 표시: 1시간",
     "collectedAt": "2026-09-12 (한국시간)",
     "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
-    "sourceNote": "개별 글 링크 미확보 · 링크는 종목 피드로 연결됩니다.",
-    "editorialTitle": true
+    "sourceNote": "공유 링크로 개별 글을 열어 작성자와 기존 발췌를 대조했습니다. 위 맥락 설명은 직접 작성한 학습용 요약이며 원문 인용이 아닙니다. 원문에 담긴 사실 주장과 전망의 진위까지 확인한 것은 아닙니다.",
+    "editorialTitle": true,
+    "sourceShareUrl": "https://tossinvest.com/_ul/kETHsD",
+    "postSummary": "작성자는 월초 반도체 수출을 월간·분기 실적으로 확장하고 환율과 메모리 가격을 고려해 삼성전자 이익과 FCF를 예상합니다. 이어 주주환원 규모와 자사주·현금배당의 배분을 가정해 주당 배당금과 배당수익률을 계산하고, 이를 보유 지속과 주가 상승 전망의 근거로 삼습니다. 후속 수출 지표가 강하면 추정치를 높일 수 있다는 내용으로 마무리합니다. 기존 두 인용은 이 연속된 전망의 서로 떨어진 부분입니다. 수출에서 배당까지 여러 가정이 이어지므로 확정된 실적이나 배당 공시로 읽으면 안 되며, 총환원에서 자사주를 뺀 금액과 제시한 현금배당 범위가 어떻게 연결되는지도 추가 확인이 필요합니다.",
+    "sourceAuthor": "tauri",
+    "sourceVerifiedAt": "2026-09-13 (한국시간)"
   },
   {
     "stock": "010170",
     "title": "미국 광통신주와 ‘커플링’된다는 말",
     "excerpt": "광통신분야 자체가 현재 미국과 많은 커플링이 되어있기에 미장의 분위기를 확인이 필요한 시점.",
-    "sourceUrl": "https://www.tossinvest.com/stocks/A010170/community",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321364432",
     "terms": [
       "coupling",
       "optical-communication"
@@ -417,8 +447,12 @@
     "publishedAt": "수집 당시 표시: 20시간",
     "collectedAt": "2026-09-12 (한국시간)",
     "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
-    "sourceNote": "개별 글 링크 미확보 · 링크는 종목 피드로 연결됩니다.",
-    "editorialTitle": true
+    "sourceNote": "공유 링크로 개별 글을 열어 작성자와 기존 발췌를 대조했습니다. 위 맥락 설명은 직접 작성한 학습용 요약이며 원문 인용이 아닙니다. 원문에 담긴 사실 주장과 전망의 진위까지 확인한 것은 아닙니다.",
+    "editorialTitle": true,
+    "sourceShareUrl": "https://tossinvest.com/_ul/kEjHoA",
+    "postSummary": "작성자는 국내 시장의 매도 흐름 속에서도 대한광통신이 상승 추세 안에 있다고 해석하면서, 더 낮은 가격대의 지지를 확인할 가능성을 제시합니다. 이어 국내 광통신주가 미국 시장과 함께 움직인다는 전제에서 미국 광통신주와 물가·유가·금리 여건을 살펴야 한다고 설명합니다. 생산자물가와 소비자물가, 연준의 금리 결정으로 이야기를 확장하며 마감 리포트를 출처로 적고 차트도 첨부합니다. 다만 양 시장의 동행 정도를 계산한 자료는 없고, 경제지표와 금리 확률의 원출처도 이번 대조에서는 검증하지 않았습니다. 차트 해석과 거시경제 설명이 함께 제시됐다는 사실만으로 연결 관계가 입증되는 것은 아닙니다.",
+    "sourceAuthor": "지울이",
+    "sourceVerifiedAt": "2026-09-13 (한국시간)"
   },
   {
     "stock": "000660",
@@ -456,7 +490,7 @@
     "stock": "005930",
     "title": "좋은 뉴스와 좋은 매수가격은 같은 말일까",
     "excerpt": "가격이 얼마나 선반영됐는지 먼저 봐야 합니다. 뉴스가 좋다고 주가의 손익비까지 좋은 것은 아닙니다.",
-    "sourceUrl": "https://www.tossinvest.com/stocks/A005930/community",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321628828",
     "terms": [
       "priced-in",
       "risk-reward"
@@ -480,14 +514,20 @@
     "publishedAt": "수집 당시 표시: 3시간 · 본문 기준시각 2026-09-12 07:47 KST",
     "collectedAt": "2026-09-12 (한국시간)",
     "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
-    "sourceNote": "개별 글 링크 미확보 · 링크는 종목 피드로 연결됩니다.",
-    "editorialTitle": true
+    "sourceNote": "공유 링크로 개별 글을 열어 작성자와 기존 발췌를 대조했습니다. 위 맥락 설명은 직접 작성한 학습용 요약이며 원문 인용이 아닙니다. 원문에 담긴 사실 주장과 전망의 진위까지 확인한 것은 아닙니다. 로그인이 필요한 마지막 문단은 확인하지 못해 공개된 부분만 요약했습니다. case-08·case-11은 같은 원글의 서로 다른 논점입니다.",
+    "editorialTitle": true,
+    "sourceShareUrl": "https://tossinvest.com/_ul/kEjHUA",
+    "samePostGroup": "morning-news-2026-09-12",
+    "postSummaryScope": "partial",
+    "postSummary": "공개된 부분에서 작성자는 한국 증시의 하락과 이후 미국 증시의 반등을 비교하며 다음 한국 거래일의 업종별 반등 가능성을 논합니다. 금리·물가·유가와 연준 발언을 위험 변수로 두면서 반도체·전력기기·자동차를 구분해 설명합니다. 일부 반도체 종목만 상승하면 숏커버일 수 있다고 추정하고, 이미 많이 오른 다른 업종은 좋은 뉴스가 가격에 반영됐는지 살펴야 한다고 강조합니다. 두 학습 사례는 한 원글의 서로 다른 논점입니다. 개별 페이지에서도 마지막 문단을 펼치려면 로그인이 필요해 결론의 끝부분은 확인하지 못했으며, 요약은 공개된 범위에 한정합니다.",
+    "sourceAuthor": "고미리레",
+    "sourceVerifiedAt": "2026-09-13 (한국시간)"
   },
   {
     "stock": "010170",
     "title": "‘14층 지지’는 바닥이 보장됐다는 뜻일까",
     "excerpt": "다행히 14층 지지해줬네👍",
-    "sourceUrl": "https://www.tossinvest.com/stocks/A010170/community",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321379086",
     "terms": [
       "support"
     ],
@@ -510,7 +550,11 @@
     "publishedAt": "수집 당시 표시: 20시간 (수정됨)",
     "collectedAt": "2026-09-12 (한국시간)",
     "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
-    "sourceNote": "개별 글 링크 미확보 · 링크는 종목 피드로 연결됩니다.",
-    "editorialTitle": true
+    "sourceNote": "공유 링크로 개별 글을 열어 작성자와 기존 발췌를 대조했습니다. 위 맥락 설명은 직접 작성한 학습용 요약이며 원문 인용이 아닙니다. 원문에 담긴 사실 주장과 전망의 진위까지 확인한 것은 아닙니다.",
+    "editorialTitle": true,
+    "sourceShareUrl": "https://tossinvest.com/_ul/kEjHgA",
+    "postSummary": "글은 ‘14층’에서 가격이 버텼다는 안도감을 표현한 짧은 관찰 한 문장입니다. 대한광통신의 주가 맥락에서 약 1만4천원대를 뜻하는 것으로 읽을 수 있지만 작성자가 단위를 명시하지는 않았습니다. 지지가 유지된 시간, 거래량, 이후의 대응 기준은 제시하지 않았으므로 이 한 문장을 바닥이 확정됐다는 분석으로 확대해 읽지 않아야 합니다.",
+    "sourceAuthor": "심신삐약주주",
+    "sourceVerifiedAt": "2026-09-13 (한국시간)"
   }
 ]

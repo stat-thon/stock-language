@@ -71,7 +71,7 @@ export function validateDataset({cases, glossary, meta}) {
   const record = (v, path) => {if (!isRecord(v)) {fail(path, '객체가 필요합니다.');return false;}return true;};
   const url = (v, path) => {if (!safeUrl(v)) fail(path, '인증정보 없는 http/https URL이 필요합니다.');};
   const sources = (values, path) => {if (array(values, path, 30, 1)) values.forEach((s, i) => {if (record(s, `${path}[${i}]`)) {text(s.label, `${path}[${i}].label`, 300);url(s.url, `${path}[${i}].url`);}});};
-  const termIds = new Set(), stockCodes = new Set(), caseIds = new Set(), excerpts = new Set(), postKeys = new Set();
+  const termIds = new Set(), stockCodes = new Set(), caseIds = new Set(), excerpts = new Set(), postKeys = new Map();
   if (array(glossary, 'glossary', 2000, 1)) glossary.forEach((t, i) => {
     const p = `glossary[${i}]`;if (!record(t, p)) return;
     if (!isText(t.id, 100) || !/^[a-z0-9][a-z0-9-]*$/.test(t.id)) fail(`${p}.id`, '영문 소문자·숫자·하이픈 ID가 필요합니다.');
@@ -100,6 +100,10 @@ export function validateDataset({cases, glossary, meta}) {
     if (!stockCodes.has(c.stock)) fail(`${p}.stock`, 'meta.stocks에 없는 종목코드');
     for (const key of ['title', 'category', 'claimType', 'publishedAt', 'collectedAt', 'sourceLabel']) text(c[key], `${p}.${key}`, 300);
     for (const key of ['explanation', 'reason', 'caution', 'sourceNote']) text(c[key], `${p}.${key}`, 10000);
+    for (const [key,max] of [['postSummary',2000],['sourceAuthor',200],['sourceVerifiedAt',100],['samePostGroup',100]]) if(c[key]!==undefined)text(c[key],`${p}.${key}`,max);
+    if(c.postSummaryScope!==undefined&&!['full','partial'].includes(c.postSummaryScope))fail(`${p}.postSummaryScope`,'full 또는 partial만 사용할 수 있습니다.');
+    if(c.sourceShareUrl!==undefined)url(c.sourceShareUrl,`${p}.sourceShareUrl`);
+    if(c.postSummary!==undefined&&!isText(c.sourceVerifiedAt,100))fail(`${p}.sourceVerifiedAt`,'맥락 요약에는 비어 있지 않은 원문 확인일이 필요합니다.');
     text(c.excerpt, `${p}.excerpt`, 1000);
     if (isText(c.excerpt, 1000)) {
       const normalized = normalizeExcerpt(c.excerpt);
@@ -109,8 +113,15 @@ export function validateDataset({cases, glossary, meta}) {
     url(c.sourceUrl, `${p}.sourceUrl`);
     if (safeUrl(c.sourceUrl)) try {
       const identity = sourceIdentity(c.sourceUrl);
-      if (identity.key && postKeys.has(identity.key)) fail(`${p}.sourceUrl`, '같은 개별 글 URL 중복');
-      if (identity.key) postKeys.add(identity.key);
+      if(c.postSummary!==undefined&&identity.kind!=='post')fail(`${p}.postSummary`,'글 전체의 맥락은 개별 게시물 URL을 확인한 사례에만 추가할 수 있습니다.');
+      if(identity.key) {
+        const previous=postKeys.get(identity.key);
+        const words=isText(c.excerpt,1000)?c.excerpt.trim().split(/\s+/).length:0;
+        if(previous) {
+          if(identity.kind!=='post'||!isText(c.samePostGroup,100)||!isText(previous.group,100)||c.samePostGroup!==previous.group)fail(`${p}.sourceUrl`,'같은 개별 글 URL 중복: 같은 원문의 별도 논점은 모든 사례에 동일한 samePostGroup을 명시해 주세요.');
+          previous.words+=words;
+        } else postKeys.set(identity.key,{kind:identity.kind,group:c.samePostGroup,words,path:p});
+      }
       if (identity.kind === 'feed' && !/피드|개별 글|직접 링크/.test(c.sourceNote || '')) fail(`${p}.sourceNote`, '피드 링크의 한계를 명시해 주세요.');
     } catch (e) {fail(`${p}.sourceUrl`, e.message);}
     if (c.custom === true || c.provenance?.reviewStatus === 'pending') fail(p, '검토 전 개인 제안은 cases.json에 자동 공개할 수 없습니다.');
@@ -125,6 +136,7 @@ export function validateDataset({cases, glossary, meta}) {
       if (check.url !== undefined) {url(check.url, `${q}.url`);text(check.label, `${q}.label`, 300);}
     });
   });
+  for(const post of postKeys.values())if(post.kind==='post'&&post.words>25)fail(`${post.path}.excerpt`,`동일 원문의 모든 발췌 합계는 25단어 이내여야 합니다. 현재 ${post.words}단어입니다.`);
   return {ok: errors.length === 0, errors, warnings, counts: {cases: Array.isArray(cases) ? cases.length : 0, terms: termIds.size, stocks: stockCodes.size}};
 }
 

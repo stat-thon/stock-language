@@ -49,6 +49,15 @@
     try { const u = new URL(value); return ['http:','https:'].includes(u.protocol) && !u.username && !u.password ? u.href : null; }
     catch { return null; }
   }
+  function caseSourceLabel(c) {
+    const safe=safeUrl(c.sourceUrl);
+    if(safe) {
+      const u=new URL(safe),isToss=/(^|\.)tossinvest\.com$/.test(u.hostname);
+      if(isToss&&/^\/community\/posts\/\d+\/?$/.test(u.pathname))return '원문 전체 읽기 ↗';
+      if(isToss&&/^\/stocks\/A\d{6}\/community\/?$/.test(u.pathname)&&!u.searchParams.get('post'))return '종목 커뮤니티 ↗';
+    }
+    return c.custom?'입력한 출처 ↗':'출처 보기 ↗';
+  }
   const textField = (v,max,min=0) => typeof v==='string' && v.trim().length>=min && v.length<=max;
   const normalize = value => value.normalize('NFKC').replace(/\s+/g,'').toLowerCase();
   function termPosition(text,name,start=0) {
@@ -84,10 +93,15 @@
     const existingExcerpts=new Set(curated.map(c=>normalize(c.excerpt || '')));
     for (const c of raw.cases) {
       if (!c || !textField(c.id,100,1) || !/^user-[a-zA-Z0-9-]+$/.test(c.id) || !stockCodes.has(c.stock) || !textField(c.excerpt,300,1) || !safeUrl(c.sourceUrl) || !textField(c.explanation,2000) || !textField(c.title,100,1) || !textField(c.collectedAt,40,1)) throw new Error('직접 추가한 글에 잘못된 내용이나 주소가 있습니다.');
+      if(c.postSummary!==undefined&&!textField(c.postSummary,2000))throw new Error('직접 작성한 맥락 요약은 2,000자 이내의 글이어야 합니다.');
+      if(c.postSummaryScope!==undefined&&!['full','partial'].includes(c.postSummaryScope))throw new Error('맥락 요약의 확인 범위는 full 또는 partial이어야 합니다.');
       const terms=detectTerms(c.excerpt);
       if (!terms.length) throw new Error('용어집의 용어가 없는 글은 가져올 수 없습니다.');
       if (caseIDs.has(c.id) || postKey(c.sourceUrl)&&existingUrls.has(postKey(c.sourceUrl)) || existingExcerpts.has(normalize(c.excerpt))) continue;
-      clean.cases.push({id:c.id,stock:c.stock,title:c.title.trim(),excerpt:c.excerpt.trim(),sourceUrl:safeUrl(c.sourceUrl),sourceLabel:'직접 추가한 출처',publishedAt:'작성일 미확인',collectedAt:c.collectedAt,terms,category:'직접 추가',explanation:c.explanation.trim(),claimType:'미분류',reason:'직접 추가한 자료입니다. 해석과 주장의 근거를 직접 확인해 주세요.',checks:[],caution:'직접 추가 · 미검증. 입력한 문장과 해석을 보관하며 자동 사실 확인은 하지 않습니다.',custom:true});
+      const customCase={id:c.id,stock:c.stock,title:c.title.trim(),excerpt:c.excerpt.trim(),sourceUrl:safeUrl(c.sourceUrl),sourceLabel:'직접 추가한 출처',publishedAt:'작성일 미확인',collectedAt:c.collectedAt,terms,category:'직접 추가',explanation:c.explanation.trim(),claimType:'미분류',reason:'직접 추가한 자료입니다. 해석과 주장의 근거를 직접 확인해 주세요.',checks:[],caution:'직접 추가 · 미검증. 입력한 문장과 해석을 보관하며 자동 사실 확인은 하지 않습니다.',custom:true};
+      if(c.postSummary?.trim())customCase.postSummary=c.postSummary.trim();
+      if(c.postSummaryScope!==undefined)customCase.postSummaryScope=c.postSummaryScope;
+      clean.cases.push(customCase);
       caseIDs.add(c.id);if(postKey(c.sourceUrl))existingUrls.add(postKey(c.sourceUrl));existingExcerpts.add(normalize(c.excerpt));
     }
     if (clean.stocks.length>100 || clean.cases.length>500) throw new Error('종목은 100개, 직접 추가한 글은 500개까지 보관할 수 있습니다.');
@@ -149,12 +163,22 @@
     if(c.editorialTitle)titleWrap.append(el('span','editorial-title-note','학습용으로 붙인 제목'));
     const saved=state.savedCases.includes(c.id),save=button('','icon-button'+(saved?' is-saved':''),()=>saveCase(c.id),'bookmark');
     save.id=`save-${page}-${c.id}`;save.setAttribute('aria-label',saved?'문장 저장 해제':'문장 저장');save.setAttribute('aria-pressed',String(saved));head.append(titleWrap,save);
+    card.append(head);
+    if(typeof c.postSummary==='string'&&c.postSummary.trim()) {
+      const partial=c.postSummaryScope==='partial';
+      const context=el('section','case-context'),contextHead=el('div','case-context-heading'),contextTitle=el('h4','',partial?'확인된 본문의 맥락':'글 전체의 맥락');
+      contextTitle.id=`context-${page}-${c.id}`;context.setAttribute('aria-labelledby',contextTitle.id);
+      contextHead.append(contextTitle,el('span','case-context-label',partial?'공개된 부분의 학습용 요약 · 원문 인용 아님':c.custom?'직접 작성 · 미검증 · 원문 인용 아님':'학습용 요약 · 원문 인용 아님'));
+      context.append(contextHead,el('p','case-context-body',c.postSummary.trim()));card.append(context);
+    }
     const compare=el('div','comparison'),original=el('div','original-pane'),translated=el('div','interpretation-pane');
     const originalLabel=el('div','pane-label');originalLabel.append(icon('quote'),document.createTextNode(c.custom?'직접 가져온 문장':'커뮤니티 실제 문장'));
     const quote=el('blockquote');quote.append(highlight(c.excerpt || '',c.terms || []));
-    const sourceNote=el('div','excerpt-note');sourceNote.append(link(c.custom?'원문 보기 ↗':'출처 커뮤니티 ↗',c.sourceUrl));sourceNote.append(document.createTextNode(` · ${c.publishedAt || '작성일 미확인'} · 일부 발췌`));
+    const sourceNote=el('div','excerpt-note');sourceNote.append(link(caseSourceLabel(c),c.sourceUrl,'case-source-link'));sourceNote.append(el('p','source-link-note',`${c.publishedAt || '작성일 미확인'} · 일부 발췌`));
+    if(typeof c.sourceAuthor==='string'&&c.sourceAuthor.trim())sourceNote.append(el('p','source-link-note source-author',`작성자 ${c.sourceAuthor.trim()}`));
     if(c.sourceNote)sourceNote.append(el('p','source-link-note',c.sourceNote));
     sourceNote.append(el('p','source-link-note',`수집 ${c.collectedAt || meta.collectedAt || '날짜 미기록'}`));
+    if(typeof c.sourceVerifiedAt==='string'&&c.sourceVerifiedAt.trim())sourceNote.append(el('p','source-link-note source-verified-at',`원문 확인 ${c.sourceVerifiedAt.trim()}`));
     original.append(originalLabel,quote,sourceNote);
     const translatedLabel=el('div','pane-label');translatedLabel.append(icon('pen'),document.createTextNode(c.custom?'내가 적은 해석':'쉬운 말로 풀면'));
     const claim=el('div','claim-line');claim.append(el('span','claim-tag',c.claimType || '의견'),el('span','',c.custom?'직접 분류해 보세요.':'글쓴이의 주장은 별도 확인이 필요해요.'));
@@ -169,10 +193,10 @@
     const cChecks=c.checks?.length?c.checks:[{question:'이 주장을 뒷받침하는 출처가 있나요?',detail:'공시나 기업 발표의 날짜와 원문을 확인하고, 단정적인 전망과 확인된 사실을 구분해 보세요.'}];
     for(const check of cChecks) {const li=el('li');li.append(el('strong','',check.question),el('p','',check.detail));if(safeUrl(check.url))li.append(link(check.label || '확인 자료 보기',check.url));checks.append(li);}
     details.append(checks);if(c.caution)details.append(el('p','case-caution',c.caution));
-    const source=el('div','source-row'),sourceInfo=el('div');sourceInfo.append(link(c.custom?'직접 추가한 원문 ↗':'출처 커뮤니티 ↗',c.sourceUrl),el('small','',`${c.sourceLabel || '토스증권 커뮤니티'} · 수집 ${c.collectedAt || meta.collectedAt || '날짜 미기록'}`));
+    const source=el('div','source-row'),sourceInfo=el('div');sourceInfo.append(el('small','',`${c.sourceLabel || '토스증권 커뮤니티'} · 수집 ${c.collectedAt || meta.collectedAt || '날짜 미기록'}`));
     const complete=button(state.completed.includes(c.id)?'✓ 학습 완료':'읽었어요','complete-button'+(state.completed.includes(c.id)?' active':''),()=>{toggle('completed',c.id);document.getElementById(`done-${page}-${c.id}`)?.focus({preventScroll:true});});complete.id=`done-${page}-${c.id}`;complete.setAttribute('aria-pressed',String(state.completed.includes(c.id)));source.append(sourceInfo,complete);details.append(source);
     if(c.custom)details.append(button('추가한 글 삭제','text-button delete-button',()=>deleteCase(c.id)));
-    card.append(head,compare,bottom,details);return card;
+    card.append(compare,bottom,details);return card;
   }
   function renderStocks() {
     const wrap=$('#stock-filters');wrap.replaceChildren();
@@ -188,7 +212,7 @@
     const cats=[...new Set(allCases().map(c=>c.category).filter(Boolean))];const select=$('#case-category');select.replaceChildren();
     for(const c of ['all',...cats]) {const o=el('option','',c==='all'?'모든 주제':c);o.value=c;select.append(o);}select.value=caseCategory;
     if(!select.value){caseCategory='all';select.value='all';}
-    const matches=allCases().filter(c=>(stock==='all'||c.stock===stock)&&(caseCategory==='all'||c.category===caseCategory)&&(!hideCompleted||!state.completed.includes(c.id))&&(!caseSearch||normalize([c.title,c.excerpt,c.explanation,stockName(c.stock),...(c.terms||[]).map(id=>termMap.get(id)?.name||'')].join(' ')).includes(normalize(caseSearch))));
+    const matches=allCases().filter(c=>(stock==='all'||c.stock===stock)&&(caseCategory==='all'||c.category===caseCategory)&&(!hideCompleted||!state.completed.includes(c.id))&&(!caseSearch||normalize([c.title,c.excerpt,c.postSummary,c.explanation,stockName(c.stock),...(c.terms||[]).map(id=>termMap.get(id)?.name||'')].join(' ')).includes(normalize(caseSearch))));
     const count=$('#case-result-count');count.replaceChildren(el('strong','',`${matches.length}개의 문장`),document.createTextNode(stock==='all'?'을 함께 읽어요':` · ${stockName(stock)}`));
     const wrap=$('#case-list');wrap.replaceChildren(...matches.slice(0,limit).map(caseCard));
     if(!matches.length)wrap.append(empty('아직 만날 문장이 없어요',allCases().length?'검색어나 선택한 조건을 바꾸거나 직접 문장을 추가해 보세요.':'확인한 커뮤니티 문장을 추가하면 원문과 해석을 함께 볼 수 있어요.','글 추가하기',openAddCase));
@@ -258,7 +282,7 @@
     appendDetail(content,'예를 들면 · 학습용으로 만든 문장',t.example);appendDetail(content,'이렇게 오해하기 쉬워요',t.pitfall);appendDetail(content,'이 질문까지 해보세요',t.check);
     const matched=allCases().filter(c=>(c.terms||[]).includes(id));
     if(matched.length) {const section=el('section','detail-section');section.append(el('h3','',`사례·해석 ${matched.length}개와 연결`));
-      for(const c of matched.slice(0,4)) {const p=el('p');p.append(el('span','',`${stockName(c.stock)} · ${c.title} `),link(c.custom?'원문 ↗':'출처 커뮤니티 ↗',c.sourceUrl));section.append(p);}content.append(section);}
+      for(const c of matched.slice(0,4)) {const p=el('p');p.append(el('span','',`${stockName(c.stock)} · ${c.title} `),link(caseSourceLabel(c),c.sourceUrl));section.append(p);}content.append(section);}
     if(t.sources?.length) {const section=el('section','detail-section'),list=el('ul','source-list');section.append(el('h3','', '뜻을 확인한 자료'));for(const s of t.sources) {const li=el('li');li.append(link(s.label,s.url));list.append(li);}section.append(list);content.append(section);}
     const saved=state.savedTerms.includes(id),save=button(saved?'✓ 학습장에 저장됨':'학습장에 용어 저장','button'+(saved?'':' primary'),()=>{toggle('savedTerms',id);openTerm(id);},'bookmark');content.append(save);
   }
@@ -321,10 +345,10 @@
       repositoryUrl?`저장소: ${repositoryUrl}`:'이 사이트의 GitHub 저장소에서 작업해 주세요.',
       `기존 ${baseStocks.map(s=>s.name).join('·')} 사례와 용어집을 살펴보고, 관심 종목의 새 자료를 보강해 주세요.`,
       '토스증권 커뮤니티의 실제 게시글을 Computer Use로 직접 열고 스크롤하며 확인해 주세요. 공식 API로 허용된 조회가 가능한지도 확인하되, 읽지 않은 원문이나 출처를 만들어내지 마세요.',
-      '반복되는 문장·용어, 욕설·조롱, 광고·근거 없는 매매 신호를 걸러내고 공부에 도움이 되는 사례만 고르세요. 전체 글 대신 필요한 짧은 부분을 발췌하고 원문의 뜻을 바꾸지 마세요.',
+      '반복되는 문장·용어, 욕설·조롱, 광고·근거 없는 매매 신호를 걸러내고 공부에 도움이 되는 사례만 고르세요. 글 전체를 읽고 흐름과 결론을 직접 쓴 맥락 요약에 담으세요. 타인 글 전문은 재게시하지 말고 필요한 짧은 인용과 요약을 구분하세요. 로그인 등으로 일부만 확인했다면 요약 범위를 partial로 표시하세요.',
       '첨부한 공개 검토용 사례 JSON이 있다면 제안 자료로만 취급하고 원문·해석을 다시 확인해 주세요. 개인 학습기록 백업이나 책갈피는 공개하지 마세요.',
       '기존 glossary.json과 cases.json을 중복 없이 보강하고, 쉬운 해석·관찰/의견/전망의 구분·확인할 질문을 작성해 주세요. 용어의 뜻은 공식 자료와 대조해 주세요.',
-      '원문 출처와 확인일, 글의 게시시각을 기록하고 개별 글 링크를 확보하지 못했다면 종목 피드 링크임을 명시하세요. 학습용 제목·예문과 실제 발췌를 구분해 주세요.',
+      '새 공개 사례는 게시글의 공유 버튼에서 링크를 얻고, 해당 링크를 열어 작성자·본문이 일치하는 개별 글 주소를 확인하세요. sourceUrl·sourceShareUrl·sourceAuthor·sourceVerifiedAt·postSummary를 기록하고 게시시각과 확인일을 구분하세요. 개별 주소를 못 찾은 기존 사례는 피드 링크임을 명시하고, 미확인 글에 전체 맥락 요약을 붙이지 마세요. 같은 원글을 여러 사례에서 다루면 같은 samePostGroup을 기록하고 인용 합계를 25단어 이내로 유지하세요.',
       '데이터 형식·출처 링크·기존 기능·모바일 화면을 검증하고 단일 HTML을 빌드하세요. 검토한 공개 자료만 저장소의 main에 반영한 뒤 GitHub Pages 배포 성공과 실제 사이트 반영을 확인해 주세요.',
       '최종 응답에는 추가/수정한 사례와 용어 수, 수집 범위와 한계, 공개 사이트 주소를 알려주세요.'
     ].join('\n\n');

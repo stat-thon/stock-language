@@ -32,6 +32,7 @@ jobs:
           node --check analysis-charts.js
           node --check analysis-math.js
           npm run validate
+          node verify-source-context.mjs
           node verify-analysis-math.mjs
           npm run test:bridge
       - name: Build standalone HTML
