@@ -13,7 +13,7 @@
   <div class="page-shell">
     <header class="masthead">
       <a class="brand" href="#read" aria-label="문장 너머 홈"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 5h10v23L5 24V5Zm10 0h12v19H15M20 10h4m-4 5h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>문장 너머<span class="brand-caption">주식 문장 읽기 노트</span></span></a>
-      <nav aria-label="주요 메뉴"><a href="#read" data-page="read" class="active">실제 글 읽기</a><a href="#glossary" data-page="glossary">용어집</a><a href="#notebook" data-page="notebook">내 학습장<span class="nav-count" id="saved-count">0</span></a></nav>
+      <nav aria-label="주요 메뉴"><a href="#read" data-page="read" class="active">실제 글 읽기</a><a href="#glossary" data-page="glossary">용어집</a><a href="#analysis" data-page="analysis">투자분석</a><a href="#notebook" data-page="notebook">내 학습장<span class="nav-count" id="saved-count">0</span></a></nav>
       <button class="button primary header-add" data-action="add-case"><span aria-hidden="true">＋</span> 글 추가하기</button>
     </header>
     <main id="main" tabindex="-1">
@@ -28,6 +28,7 @@
         </div>
       </section>
       <section id="glossary-page" class="view" hidden aria-label="용어집"><div class="page-heading"><div><p class="quiet-label">헷갈릴 때 펼쳐보는</p><h1>주식 용어집</h1><p>뜻과 학습용 예문, 흔한 오해까지. 실제 글에서 확인한 용어와 관련 개념을 함께 담았습니다.</p></div><button class="button" data-action="print">용어집 인쇄</button></div><div class="glossary-controls"><label class="search-field"><span aria-hidden="true">⌕</span><input id="term-search" type="search" placeholder="용어 또는 뜻 검색" aria-label="용어집 검색" autocomplete="off"></label><label class="checkbox-label"><input type="checkbox" id="used-only"> 사례와 해석에 나온 용어만</label></div><div class="category-tabs" id="glossary-categories" aria-label="용어 주제"></div><p id="term-result-count" class="result-count" role="status" aria-live="polite"></p><div id="term-list" class="term-grid"></div></section>
+      <section id="analysis-page" class="view" hidden aria-label="투자분석 배우기"></section>
       <section id="notebook-page" class="view" hidden aria-label="내 학습장"><div class="page-heading"><div><p class="quiet-label">조금씩, 내 것이 되는 말</p><h1>내 학습장</h1><p>저장한 문장과 용어를 모으고, 기억을 확인해요.</p></div><button class="button primary" id="start-quiz">용어 복습하기</button></div><div id="notebook-stats" class="notebook-stats"></div><div class="notebook-tabs" id="notebook-tabs" aria-label="학습장 분류"><button class="active" data-notebook="cases">저장한 문장</button><button data-notebook="terms">저장한 용어</button><button data-notebook="custom">직접 추가한 글</button></div><div id="notebook-content"></div><div class="backup-box"><div><h3>나의 기록, 따로 보관하기</h3><p>이 브라우저에 저장됩니다. 다른 기기로 옮기거나 안전하게 보관하려면 백업하세요.</p></div><div class="backup-actions"><button class="button" data-action="export">백업 내보내기</button><button class="button" data-action="import">백업 가져오기</button><input id="backup-file" type="file" accept="application/json,.json" hidden></div></div></section>
     </main>
     <footer class="footer"><p><strong>문장 너머</strong><span>이해하는 만큼, 스스로 판단하기.</span></p><div><span class="footer-notice">투자 판단을 돕는 용어 학습 자료</span><button data-action="method">자료 수집과 출처</button><button class="footer-update" data-action="updates">자료 업데이트</button></div></footer>

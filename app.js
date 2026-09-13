@@ -230,17 +230,17 @@
   }
   function render() {
     $('#hero').hidden=page!=='read';
-    for(const name of ['read','glossary','notebook'])document.getElementById(`${name}-page`).hidden=page!==name;
+    for(const name of ['read','glossary','analysis','notebook'])document.getElementById(`${name}-page`).hidden=page!==name;
     $$('[data-page]').forEach(a=>{a.classList.toggle('active',a.dataset.page===page);if(a.dataset.page===page)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
     $('#saved-count').textContent=state.savedCases.length+state.savedTerms.length;
     const stats=$('#hero-stats');stats.replaceChildren();
     for(const [value,label] of [[curated.length,'실제 문장'],[glossary.length,'정리한 용어'],[new Set(curated.map(c=>c.stock)).size,'살펴본 종목']]){const s=el('span');s.append(el('strong','',value),document.createTextNode(label));stats.append(s);}
     $('#collection-date').textContent=meta.collectedAt?`수집 기준 ${meta.collectedAt}`:'직접 읽고 선별한 자료';
     $('#selection-footnote').textContent=meta.selectionNote || '용어의 쓰임과 맥락을 학습하기 위한 자료입니다. 글쓴이의 주장과 수치가 사실이라는 뜻은 아닙니다.';
-    if(page==='read')renderRead();if(page==='glossary')renderGlossary();if(page==='notebook')renderNotebook();
+    if(page==='read')renderRead();if(page==='glossary')renderGlossary();if(page==='notebook')renderNotebook();if(page==='analysis')window.AnalysisLab.show({openTerm,openCase:id=>{const c=curated.find(c=>c.id===id);if(!c)return;stock='all';caseCategory='all';caseSearch=c.title;hideCompleted=false;$('#case-search').value=caseSearch;$('#case-category').value='all';$('#hide-completed').checked=false;limit=8;navigate('read');}});
   }
   function navigate(name) {
-    page=['read','glossary','notebook'].includes(name)?name:'read';
+    page=['read','glossary','analysis','notebook'].includes(name)?name:'read';
     if(location.hash!==`#${page}`)location.hash=page;
     render();window.scrollTo({top:0,behavior:'instant'});
   }
@@ -380,7 +380,7 @@
   }
   $$('[data-page]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();navigate(a.dataset.page);}));
   $('[href="#read"].brand').addEventListener('click',e=>{e.preventDefault();navigate('read');});
-  window.addEventListener('hashchange',()=>{const next=location.hash.slice(1);if(['read','glossary','notebook'].includes(next)&&next!==page){page=next;render();}});
+  window.addEventListener('hashchange',()=>{const next=location.hash.slice(1).split('/')[0];if(['read','glossary','analysis','notebook'].includes(next)&&(next!==page||next==='analysis')){page=next;render();}});
   $('#case-search').addEventListener('input',e=>{caseSearch=e.target.value;limit=8;renderRead();});
   $('#case-category').addEventListener('change',e=>{caseCategory=e.target.value;limit=8;renderRead();});
   $('#hide-completed').addEventListener('change',e=>{hideCompleted=e.target.checked;limit=8;renderRead();});
@@ -395,8 +395,8 @@
   $('#backup-file').addEventListener('change',importBackup);$('#start-quiz').addEventListener('click',startQuiz);
   window.addEventListener('beforeprint',()=>{const previous={termSearch,termCategory,usedOnly};termSearch='';termCategory='all';usedOnly=false;renderGlossary();({termSearch,termCategory,usedOnly}=previous);});
   window.addEventListener('afterprint',()=>{if(page==='glossary')renderGlossary();});
-  document.addEventListener('keydown',e=>{if(e.key==='/'&&!dialog.open&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)){e.preventDefault();if(page==='notebook')navigate('read');$(page==='glossary'?'#term-search':'#case-search').focus();}});
+  document.addEventListener('keydown',e=>{if(e.key==='/'&&!dialog.open&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)){e.preventDefault();if(page==='notebook')navigate('read');if(page==='analysis'&&$('#analysis-search-wrap')?.hidden){location.hash='analysis/technical';return;}$(page==='analysis'?'#analysis-search':page==='glossary'?'#term-search':'#case-search')?.focus();}});
   window.addEventListener('storage',e=>{if(e.key!==KEY)return;try{state=e.newValue?validateState(JSON.parse(e.newValue)):blankState();render();}catch{toast('다른 창의 기록을 읽지 못했습니다. 현재 기록을 백업해 주세요.');}});
-  const initial=location.hash.slice(1);page=['read','glossary','notebook'].includes(initial)?initial:'read';render();
+  const initial=location.hash.slice(1).split('/')[0];page=['read','glossary','analysis','notebook'].includes(initial)?initial:'read';render();
   if(storageError)toast(storageError);
 })();

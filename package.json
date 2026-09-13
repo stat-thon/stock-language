@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "validate": "node validate-data.mjs",
-    "build": "node validate-data.mjs && node build.mjs",
-    "test": "node verify.mjs"
+    "validate": "node validate-data.mjs && node validate-analysis.mjs",
+    "build": "npm run validate && node build.mjs",
+    "test": "node verify-analysis-math.mjs && node verify.mjs && node verify-analysis.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0"
