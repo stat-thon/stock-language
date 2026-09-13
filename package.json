@@ -6,7 +6,9 @@
   "scripts": {
     "validate": "node validate-data.mjs && node validate-analysis.mjs",
     "build": "npm run validate && node build.mjs",
-    "test": "node verify-analysis-math.mjs && node verify.mjs && node verify-analysis.mjs"
+    "test": "node verify-analysis-math.mjs && npm run test:bridge && node verify.mjs && node verify-analysis.mjs && node verify-interpret.mjs",
+    "bridge": "node bridge/server.mjs",
+    "test:bridge": "node verify-bridge.mjs && node verify-codex-client.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0"

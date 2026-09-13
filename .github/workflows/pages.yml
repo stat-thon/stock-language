@@ -25,11 +25,15 @@ jobs:
       - name: Check scripts and learning data
         run: |
           node --check app.js
+          node --check interpret.js
+          node --check bridge/server.mjs
+          node --check bridge/codex-client.mjs
           node --check analysis.js
           node --check analysis-charts.js
           node --check analysis-math.js
           npm run validate
           node verify-analysis-math.mjs
+          npm run test:bridge
       - name: Build standalone HTML
         run: |
           node build.mjs

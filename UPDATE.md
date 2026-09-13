@@ -78,3 +78,9 @@ GitHub 웹에서 JSON을 직접 편집한 경우 `index.html`을 따로 수정�
 오류가 있는 자료를 올렸다면 해당 커밋을 되돌리고 다시 `main`에 반영하세요. 이전 버전도 Git 기록에 남습니다.
 
 배포 구성은 [GitHub Pages 공식 문서](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)를 따릅니다.
+
+## 개인용 글 해석 기능 업데이트
+
+화면은 `interpret.js`·`interpret.css`, Mac 연결은 `bridge/`를 수정합니다. [BRIDGE.md](BRIDGE.md)의 실행·지원 범위와 함께 갱신하세요. `npm test`는 실제 모델을 호출하지 않는 프로토콜·서버 테스트와 브라우저 회귀 검증을 포함합니다. 인증·도구 제한을 바꿀 때는 허용되지 않은 도구가 없는지 실패 시 차단되는지 함께 검증합니다.
+
+Pages 배포에는 `index.html`만 포함됩니다. 연결 프로그램을 업데이트한 뒤에는 Mac에서 실행 중인 프로그램을 Control+C로 끄고 다시 실행해야 새 코드가 적용됩니다. 일반 커뮤니티 자료 보강과 매일 예약 수집은 글 해석 연결을 사용할 필요가 없습니다.

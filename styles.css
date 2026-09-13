@@ -293,7 +293,7 @@ dialog::backdrop { background:var(--color-backdrop); }
 @media print {
   body { background:var(--color-surface); font-size:11pt; }
   .page-shell { width:100%; padding:0; }
-  .masthead,.hero,#read-page,#notebook-page,.footer,.glossary-controls,.category-tabs,.page-heading>.button,.term-card-footer,.term-card-header .icon-button,.toast,dialog { display:none !important; }
+  .masthead,.hero,#read-page,#notebook-page,#interpret-page,.footer,.glossary-controls,.category-tabs,.page-heading>.button,.term-card-footer,.term-card-header .icon-button,.toast,dialog { display:none !important; }
   #glossary-page { display:block !important; }
   .page-heading { padding:0 0 24px; }
   .term-grid { display:block; }
@@ -303,3 +303,7 @@ dialog::backdrop { background:var(--color-backdrop); }
   .print-detail a { overflow-wrap:anywhere; }
   .term-card .term-title { font-size:20pt; }
 }
+
+/* Keep the five primary destinations reachable on compact screens. */
+@media (max-width:45rem) { .masthead nav[aria-label="주요 메뉴"] { justify-content:space-between; gap:8px; width:100%; } .masthead nav[aria-label="주요 메뉴"] a { font-size:12px; white-space:nowrap; } .masthead .nav-count { display:none; } }
+@media (max-width:23rem) { .masthead nav[aria-label="주요 메뉴"] { gap:6px; } .masthead nav[aria-label="주요 메뉴"] a { font-size:11px; letter-spacing:-.35px; } }
