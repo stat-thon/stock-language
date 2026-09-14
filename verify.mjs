@@ -122,14 +122,15 @@ try {
   assert.equal(await p.locator('#dialog').isVisible(),false);
   console.log('PASS 종목 필터·검색·빈 결과·용어 팝업');
 
-  await p.locator('#save-read-case-01').click();
-  await p.locator('[data-case-id="case-01"] .details-toggle').click();
-  await p.locator('#done-read-case-01').click();
+  const savedCaseId=cases[0].id;
+  await p.locator(`#save-read-${savedCaseId}`).click();
+  await p.locator(`[data-case-id="${savedCaseId}"] .details-toggle`).click();
+  await p.locator(`#done-read-${savedCaseId}`).click();
   await p.reload();
   const saved=await p.evaluate(key=>JSON.parse(localStorage.getItem(key)),KEY);
-  assert(saved.savedCases.includes('case-01') && saved.completed.includes('case-01'));
+  assert(saved.savedCases.includes(savedCaseId) && saved.completed.includes(savedCaseId));
   await p.locator('#hide-completed').check();
-  assert.equal(await p.locator('[data-case-id="case-01"]').count(),0);
+  assert.equal(await p.locator(`[data-case-id="${savedCaseId}"]`).count(),0);
   await p.locator('#hide-completed').uncheck();
   await p.locator('[data-page="glossary"]').click();
   assert.equal(await p.locator('.term-card').count(),glossary.length);

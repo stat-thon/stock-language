@@ -1,5 +1,98 @@
 [
   {
+    "id": "case-17",
+    "stock": "010170",
+    "title": "호가창이 마감가격과 다르면 갭상승일까",
+    "excerpt": "호가창이라 앱처 마감이랑 왜이러냐  갭상승 보여주는겨?",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321985394",
+    "sourceShareUrl": "https://tossinvest.com/_ul/kETYkD",
+    "sourceAuthor": "다정한참새330",
+    "sourceVerifiedAt": "2026-09-15 (한국시간)",
+    "postSummary": "작성자는 호가창과 마감가격으로 보이는 숫자가 다른 상황을 보고, 다음 장이 높게 시작한다는 의미인지 또는 앱 표시 문제인지 묻습니다. 본문 전체는 이 의문을 담은 짧은 글이며, 비교한 가격·시각·거래시장이나 화면 캡처는 제시하지 않았습니다. 따라서 실제 갭상승이나 앱 오류를 확인한 글이 아닙니다. 원문의 ‘앱처’가 정확히 어느 거래 세션을 가리키는지도 확인되지 않았습니다.",
+    "postSummaryScope": "full",
+    "terms": [
+      "bid-ask",
+      "trade-price",
+      "closing-price",
+      "opening-price",
+      "price-gap-up"
+    ],
+    "category": "수급",
+    "claimType": "가격 표시 질문",
+    "explanation": "호가는 사고팔겠다고 제시한 가격이고, 체결가는 실제 거래가 성립한 가격이에요. 종가는 어느 시장·거래 시간대를 마감한 가격인지 기준이 필요해요. 여기서 갭상승은 같은 시장의 전일 정규장 종가보다 다음 정규장 시가가 높게 출발한다는 용례로 읽을 수 있어요. 가상으로 종가가 10,000원이고 지금 매도호가가 10,300원이어도 다음 시가가 10,300원으로 정해진 것은 아니에요. 실제 다음 시가가 10,300원으로 형성돼야 종가 대비 3% 높게 출발했다고 계산할 수 있어요. 가격의 종류와 기준시각이 다른 숫자를 먼저 맞춰 보는 연습이에요.",
+    "reason": "실제로 거래된 가격과 아직 체결되지 않은 주문가격을 구별하고, 화면의 차이를 미래 가격 예측으로 곧장 연결하지 않는 사례예요.",
+    "checks": [
+      {
+        "question": "그 숫자는 호가인가요, 실제 체결가인가요?",
+        "detail": "최우선 매수호가는 가장 높은 매수 제시가격, 최우선 매도호가는 가장 낮은 매도 제시가격이에요. 최근 체결가와 같을 필요가 없으며 새 주문이나 취소로 바뀔 수 있어요.",
+        "label": "Investor.gov · 매수·매도 호가",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/ask-price"
+      },
+      {
+        "question": "같은 시장·거래 시간대·시각을 비교하고 있나요?",
+        "detail": "정규장 종가와 시간외 최근 거래가격, 장전 예상가격은 구분해요. 출처 자료는 가격 표시 기준을 구분하는 미국 교육 자료이며, 한국의 거래시간이나 토스 화면의 동작을 확인한 근거는 아니에요. 이 글에는 비교할 화면이 없어 원인을 특정하지 않았어요.",
+        "label": "Investor.gov · 종가와 시간외 가격의 차이",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/closing-price"
+      },
+      {
+        "question": "확정 시가가 나왔고, 어떤 갭 정의를 쓰고 있나요?",
+        "detail": "종가 대비 시가 상승과 두 일봉 사이의 가격 공백을 구분해요. 엄격한 상승 갭은 다음 날 저가가 전일 고가보다 높은 경우예요. 어느 정의에서도 현재 호가만으로 다음 거래일의 시가나 이후 상승을 보장할 수 없어요.",
+        "label": "StockCharts ChartSchool · 갭의 정의와 구분",
+        "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/gaps-and-gap-analysis"
+      }
+    ],
+    "caution": "본문은 가격 차이에 대한 질문이에요. 실제 오류, 특정 거래시장의 가격 반영 방식, 다음 거래일의 방향은 확인하지 않았어요. 계산 수치는 모두 가상이에요.",
+    "publishedAt": "수집 당시 표시: 1시간",
+    "collectedAt": "2026-09-15 (한국시간)",
+    "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
+    "sourceNote": "2026-09-15 00:05–00:06 KST 최신순에서 본문 전체를 읽고 공유 버튼의 단축 주소를 열었습니다. 개별 게시물의 작성자·본문을 대조했습니다. 맥락 요약과 용어 해석은 직접 작성했으며, 원문 주장의 사실 확인과는 구분합니다.",
+    "editorialTitle": true
+  },
+  {
+    "id": "case-16",
+    "stock": "000660",
+    "title": "비중 조절로 마음이 편해졌다는 경험을 읽는 법",
+    "excerpt": "저도 한때 그랬는데 적당히 비중조절하고나서 전쟁이나든\n폭탄을쏘든 트럼프가 떠들든말든 평온한 주말이 됩니다.",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/321689130",
+    "sourceShareUrl": "https://tossinvest.com/_ul/kEzJ6C",
+    "sourceAuthor": "하이닉스최대피해자",
+    "sourceVerifiedAt": "2026-09-15 (한국시간)",
+    "postSummary": "공개된 앞부분에서 작성자는 다음 날 주가를 알 수 없는 상황에 초조함을 느끼는 이유를 감당하기 어려운 주식 집중 투자와 연결합니다. 이어 자신도 비중을 조절한 뒤 뉴스에 덜 흔들리게 됐다는 경험을 설명합니다. 다만 구체적인 보유 비율이나 조정 방법은 제시하지 않았습니다. 더 보기를 누르면 로그인을 요구해 이후 본문은 요약에 포함하지 않았습니다. 이 경험만으로 모든 독자의 불안 원인이나 적정 투자 비율이 확인되는 것은 아닙니다.",
+    "postSummaryScope": "partial",
+    "terms": [
+      "portfolio-adjustment",
+      "portfolio-weight"
+    ],
+    "category": "투자관리",
+    "claimType": "개인 경험",
+    "explanation": "비중 조절은 전체 투자자산에서 특정 종목이나 자산이 차지하는 비율을 바꾸는 일이에요. 같은 시점의 평가금액으로 계산해야 해요. 가상으로 빚 없이 현금·주식 총 1,000만원 중 한 종목이 400만원이면 투자 비중은 40%예요. 이 종목만 25% 하락하고 나머지가 그대로라면 손실은 100만원, 전체 자산 대비 10%예요. 비중을 바꾸면 같은 주가 변동이 내 자산에 주는 영향도 달라져요. 작성자의 경험을 참고하되, 초조함 자체를 과도한 투자 비중의 증거로 단정하지 말고 자금이 필요한 시점과 손실을 감당할 능력을 함께 점검해요.",
+    "reason": "다음 날 가격을 맞히는 문제와 내 자산에서 감당할 손실을 정하는 문제를 구별하는 연습이에요.",
+    "checks": [
+      {
+        "question": "투자 비중의 전체 기준은 무엇인가요?",
+        "detail": "한 계좌만 볼지, 다른 계좌와 현금까지 포함할지 정하고 같은 시점의 평가액을 사용해요. 여러 반도체 종목을 가지고 있어도 같은 산업 위험에 함께 노출될 수 있어요.",
+        "label": "Investor.gov · 자산배분과 분산",
+        "url": "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+      },
+      {
+        "question": "언제 필요한 돈이고 얼마의 손실을 감당할 수 있나요?",
+        "detail": "불안에는 투자 경험과 뉴스 등 여러 원인이 있을 수 있어요. 투자기간, 생활에 필요한 자금, 손실을 감당할 능력과 의향을 함께 봐요. 예시의 40% 비중과 25% 하락은 권장 비율이나 예측이 아니며, 차입·거래비용이 없는 가정이에요."
+      },
+      {
+        "question": "비중 조절과 리밸런싱을 같은 말로 읽지 않았나요?",
+        "detail": "비중은 매매나 추가 투자금 배분으로 바꿀 수 있어요. 그중 정한 자산 배분으로 되돌리는 조정을 리밸런싱이라고 해요. 어떤 조정을 할지는 목표와 비용을 함께 고려해야 하며 이 글이 방법을 정해 주지는 않아요.",
+        "label": "Investor.gov · 자산배분 변경과 리밸런싱",
+        "url": "https://www.investor.gov/additional-resources/general-resources/publications-research/info-sheets/beginners-guide-asset"
+      }
+    ],
+    "caution": "글쓴이의 주관적 경험이며 적정 비중을 입증하는 자료는 아니에요. 일부 공개 본문만 요약했고, 감정만으로 매도나 추가 매수를 권하지 않아요.",
+    "publishedAt": "재확인 당시 표시: 1일",
+    "collectedAt": "2026-09-15 (한국시간)",
+    "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
+    "sourceNote": "2026-09-14에 찾아 둔 미반영 후보를 2026-09-15 00:02–00:09 KST 새로고침하고 공유 버튼으로 다시 확인했습니다. 단축 주소의 개별 글에서 작성자·공개 본문을 대조했습니다. 더 보기에서 로그인을 요구해 화면에 공개된 앞부분만 요약했습니다.",
+    "editorialTitle": true
+  },
+  {
     "id": "case-15",
     "stock": "000660",
     "title": "VIE·US GAAP·IFRS, 회계 업무의 약자를 풀어 읽기",

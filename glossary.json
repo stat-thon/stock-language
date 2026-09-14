@@ -3692,5 +3692,109 @@
       }
     ],
     "addedAt": "2026-09-13"
+  },
+  {
+    "id": "portfolio-weight",
+    "name": "투자 비중",
+    "aliases": [
+      "투자비중"
+    ],
+    "category": "투자관리",
+    "level": "기초",
+    "definition": "투자자산 전체에서 특정 종목이나 자산이 차지하는 비율이에요. 같은 시점의 해당 자산 평가금액 ÷ 비교할 전체 투자자산 평가금액 × 100으로 계산해요.",
+    "example": "가상 계산: 빚 없이 보유한 현금과 주식이 총 1,000만원이고, A주식의 현재 평가금액이 400만원이면 A주식 비중은 40%예요.",
+    "pitfall": "매입원금 기준과 현재 평가금액 기준은 달라요. 현금을 포함하는지에 따라서도 비중이 달라지며, 누구에게나 적절한 비율이 정해져 있지는 않아요.",
+    "check": "분모는 한 계좌인가요, 전체 투자자산인가요? 현금과 다른 계좌를 포함했나요? 같은 평가시점의 금액인가요?",
+    "sources": [
+      {
+        "label": "Investor.gov · 자산배분과 투자 비율",
+        "url": "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+      }
+    ],
+    "addedAt": "2026-09-15"
+  },
+  {
+    "id": "portfolio-adjustment",
+    "name": "비중 조절",
+    "aliases": [
+      "비중조절"
+    ],
+    "category": "투자관리",
+    "level": "기초",
+    "definition": "매수·매도나 추가 투자금의 배분으로 특정 종목이나 자산의 비율을 높이거나 낮추는 일이에요. 투자 목적과 기간, 손실을 감당할 능력·의향에 비춰 판단해요.",
+    "example": "가상 계산: 총 1,000만원 중 A주식 400만원에서 100만원어치를 팔아 현금으로 보유하면 A주식 비중은 40%에서 30%가 돼요. 가격 변동과 거래비용은 제외한 예시예요.",
+    "pitfall": "모든 비중 조절이 리밸런싱은 아니에요. 리밸런싱은 정한 자산 배분으로 되돌리는 조정이에요. 마음이 편해졌다는 경험만으로 적절한 비중이 입증되지는 않아요.",
+    "check": "이 돈은 언제 필요한가요? 가격 하락을 원화 손실액으로 계산해도 감당할 수 있나요? 조정의 목표와 거래비용을 확인했나요?",
+    "sources": [
+      {
+        "label": "Investor.gov · 자산배분 변경과 리밸런싱",
+        "url": "https://www.investor.gov/additional-resources/general-resources/publications-research/info-sheets/beginners-guide-asset"
+      }
+    ],
+    "addedAt": "2026-09-15"
+  },
+  {
+    "id": "trade-price",
+    "name": "체결가",
+    "aliases": [
+      "체결가격"
+    ],
+    "category": "수급",
+    "level": "기초",
+    "definition": "매수·매도 주문이 만나 실제 거래가 성립한 가격이에요. 최근 체결가는 표시 기준시점까지 마지막으로 거래된 가격이며, 사거나 팔겠다고 제시한 호가와 구별해요.",
+    "example": "가상 예시: 마지막 거래가 10,000원에서 이뤄진 뒤 호가가 매수 10,010원·매도 10,020원으로 바뀌어도, 새 거래가 없다면 최근 체결가는 10,000원이에요.",
+    "pitfall": "최근 체결가가 지금 주문하면 반드시 거래할 수 있는 가격은 아니에요. 거래가 뜸하면 오래전 가격일 수 있고, 호가 변화만으로 새 체결이 생겼다고 볼 수 없어요.",
+    "check": "표시된 값이 주문가격인가요, 실제 거래가격인가요? 마지막 체결시각·수량과 거래시장·세션을 확인했나요?",
+    "sources": [
+      {
+        "label": "Charles Schwab · 호가와 최근 체결가격의 차이",
+        "url": "https://www.schwab.com/learn/story/3-order-types-market-limit-and-stop-orders"
+      }
+    ],
+    "addedAt": "2026-09-15"
+  },
+  {
+    "id": "closing-price",
+    "name": "종가",
+    "aliases": [
+      "마감가격",
+      "마감 가격",
+      "Closing price"
+    ],
+    "category": "수급",
+    "level": "기초",
+    "definition": "하루나 특정 거래 세션을 마감한 기준 가격이에요. 주식의 정규장 종가는 보통 정규장 마지막 거래가격을 가리키며, 시간외 거래의 마지막 가격과 구분해요.",
+    "example": "가상 예시: 정규장 종가가 10,000원이고 이후 시간외 거래가 10,100원에 체결돼도, 정규장 종가를 비교하는 표의 기준은 10,000원이에요.",
+    "pitfall": "화면의 마지막 가격이 모두 같은 세션의 종가는 아니에요. 가격 제공자가 무엇을 종가로 표시하는지 확인해야 하며, 값이 다르다는 사실만으로 앱 오류를 단정할 수 없어요.",
+    "check": "어느 거래시장과 세션의 종가인가요? 날짜와 표시 기준이 같나요? 정규장 종가와 시간외 최근 체결가를 비교하고 있지는 않나요?",
+    "sources": [
+      {
+        "label": "Investor.gov · 정규장 종가와 시간외 가격 구분",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/closing-price"
+      }
+    ],
+    "addedAt": "2026-09-15"
+  },
+  {
+    "id": "price-gap-up",
+    "name": "갭상승",
+    "aliases": [
+      "갭 상승",
+      "갭상",
+      "Gap up"
+    ],
+    "category": "차트",
+    "level": "기초",
+    "definition": "이 자료에서는 전일 정규장 종가보다 다음 거래일 정규장 시가가 높게 출발한다는 일상적 용법으로 설명해요. 일봉 사이에 공백이 남는 엄격한 정의는 다음 날 저가가 전일 고가보다 높아 두 날의 거래가격 범위가 겹치지 않는 경우예요.",
+    "example": "가상 계산: 전일 종가 10,000원, 다음 시가 10,300원이면 종가 대비 3% 높게 출발했어요. 전일 고가가 10,500원이면 이것만으로 두 날의 가격 범위가 떨어진 엄격한 갭이라고 할 수는 없어요.",
+    "pitfall": "장전 호가나 예상체결가가 높다고 다음 시가가 확정된 것은 아니에요. 높게 시작해도 이후 계속 오른다는 뜻은 아니며, 어떤 갭 정의를 쓰는지 확인해야 해요.",
+    "check": "호가가 아니라 실제 확정 시가인가요? 같은 시장·세션의 전일 종가와 비교했나요? 종가·시가 차이와 두 일봉의 고가·저가 간 공백 중 무엇을 말하나요?",
+    "sources": [
+      {
+        "label": "StockCharts ChartSchool · 종가·시가 차이와 일봉 사이의 가격 공백",
+        "url": "https://chartschool.stockcharts.com/table-of-contents/chart-analysis/gaps-and-gap-analysis"
+      }
+    ],
+    "addedAt": "2026-09-15"
   }
 ]
