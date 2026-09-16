@@ -3796,5 +3796,83 @@
       }
     ],
     "addedAt": "2026-09-15"
+  },
+  {
+    "id": "slippage",
+    "name": "슬리피지",
+    "aliases": [
+      "Slippage"
+    ],
+    "category": "수급",
+    "level": "중급",
+    "definition": "주문을 낼 때 기준으로 삼은 예상가격과 실제 체결가격 사이의 차이예요. 여러 가격에 체결되면 수량으로 가중한 평균 체결가와 비교해요. 이 항목은 수집 원문의 등장어가 아니라 시장가 주문 해석을 돕는 보조 개념이에요.",
+    "example": "가상 예시(장중 접속매매): 매도 물량이 10,000원에 50주, 10,050원에 50주 있고 다른 주문 변화가 없다고 가정해요. 시장가 매수 100주가 이 물량에 모두 체결되면 평균은 10,025원으로, 예상 기준가격 10,000원보다 주당 25원 비싸게 산 경우예요. 수수료는 제외했어요.",
+    "pitfall": "불리한 차이만 생기는 것은 아니에요. 매수는 기준보다 높은 체결가가, 매도는 낮은 체결가가 불리해요. 별도 수수료나 매수·매도호가 사이의 스프레드와 같은 값이 아니에요. 위 예시는 장 시작 단일가매매의 가격 결정 과정과 구별해야 해요.",
+    "check": "어느 시점의 어떤 가격을 예상 기준으로 삼았나요? 매수·매도 방향과 체결별 수량을 반영했나요? 수수료를 따로 구분했나요? 접속매매와 단일가매매 중 어떤 거래 상황인가요?",
+    "sources": [
+      {
+        "label": "몬트리올 거래소 · 예상가격과 실제 체결가격의 차이(PDF 7쪽)",
+        "url": "https://www.m-x.ca/f_circulaires_en/162-17_en.pdf"
+      },
+      {
+        "label": "Charles Schwab · 시장가 주문의 여러 가격 체결과 호가 물량",
+        "url": "https://www.schwab.com/legal/fast-markets-notice"
+      },
+      {
+        "label": "IG · 슬리피지의 유리한 방향과 불리한 방향",
+        "url": "https://www.ig.com/en/glossary-trading-terms/slippage-definition"
+      }
+    ],
+    "addedAt": "2026-09-17"
+  },
+  {
+    "id": "common-stock",
+    "name": "보통주",
+    "aliases": [
+      "Common stock",
+      "보통 주식"
+    ],
+    "category": "공시",
+    "level": "기초",
+    "definition": "회사의 기본적인 주식 종류로, 통상 주주총회 의결권과 배당을 받을 권리가 있어요. 실제 배당 지급 여부와 금액은 회사의 결정과 조건에 따라 달라요.",
+    "example": "학습용 가상 예문: A회사 보통주를 보유했더라도 올해 배당액이 확정됐는지는 별도 배당 공시로 확인하자.",
+    "pitfall": "보통주라는 이름이 수익이나 원금을 보장하지 않아요. 같은 회사의 우선주와 가격·배당·의결권이 같다고 볼 수도 없어요.",
+    "check": "정확한 종목코드와 주식 종류를 확인했나요? 삼성전자 공식 상장 안내에서는 005930이 보통주, 005935가 우선주예요. 권리는 정관과 공시에서 확인해요.",
+    "sources": [
+      {
+        "label": "Investor.gov · 보통주·우선주와 주주 권리",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks"
+      },
+      {
+        "label": "삼성전자 IR · 보통주·우선주 상장 코드",
+        "url": "https://www.samsung.com/global/ir/stock-information/listing-Info/"
+      }
+    ],
+    "addedAt": "2026-09-17"
+  },
+  {
+    "id": "preferred-stock",
+    "name": "우선주",
+    "aliases": [
+      "Preferred stock",
+      "우선 주식"
+    ],
+    "category": "공시",
+    "level": "기초",
+    "definition": "배당이나 잔여재산 배분 등에서 보통주보다 우선하는 조건을 둔 주식이에요. 의결권 제한 여부와 구체적인 우선 조건은 주식 종류와 정관에 따라 달라요.",
+    "example": "가상 계산: 액면가 100원인 우선주에 보통주보다 액면가의 연 1%를 추가 배당하는 조건이 있다면 추가액은 주당 1원이에요. 시장주가의 1%가 아니에요.",
+    "pitfall": "모든 우선주가 같은 권리를 갖거나 배당·원금을 보장하는 것은 아니에요. 삼성전자의 2025년 우선주 DR 공시는 기초 우선주를 비누적·무의결권으로 설명하고 액면가 기준 연 1% 추가배당 조건을 명시해요.",
+    "check": "내 종목의 정관·발행조건은 무엇인가요? 의결권과 배당 기준을 확인했나요? 미지급 배당이 다음으로 쌓이는 누적형인지, 자동 누적되지 않는 비누적형인지도 구별해요.",
+    "sources": [
+      {
+        "label": "Investor.gov · 우선주의 일반적인 배당·의결권·청산 순위",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks"
+      },
+      {
+        "label": "삼성전자 IR · 우선주 DR 기초 주식의 비누적·무의결권·배당 조건(2025-02-13)",
+        "url": "https://www.samsung.com/global/ir/reports-disclosures/public-disclosure-view.84296/"
+      }
+    ],
+    "addedAt": "2026-09-17"
   }
 ]
