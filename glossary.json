@@ -4105,5 +4105,36 @@
       }
     ],
     "addedAt": "2026-09-19"
+  },
+  {
+    "id": "term-premium",
+    "name": "텀 프리미엄",
+    "aliases": [
+      "기간 프리미엄",
+      "기간프리미엄",
+      "텀프리미엄",
+      "Term premium"
+    ],
+    "category": "거시경제",
+    "level": "중급",
+    "definition": "장기 국채를 보유하며 미래 금리의 불확실성을 감수하는 대가가 수익률에 반영된 부분이에요. 모형에서는 장기 국채금리에서 그 만기 동안 예상되는 단기금리의 평균을 뺀 값으로 추정해요.",
+    "example": "가상 모형 분해: 같은 기준으로 표시한 10년 국채금리가 4%, 향후 10년간 예상 단기금리의 평균이 3.5%라면 기간 프리미엄은 4−3.5=0.5%포인트, 즉 50bp예요. 오늘의 기준금리를 빼서 계산한 차이가 아니에요.",
+    "pitfall": "직접 관측되는 값이 아니라 모형과 자료에 따른 추정치이며 음수도 가능해요. 음수라고 국채금리 자체가 음수라는 뜻은 아니에요. 성장 기대 때문에 주식에 높은 PER를 적용한다는 가격 프리미엄과도 다른 개념이에요.",
+    "check": "어느 나라·통화·만기의 국채를 어떤 모형으로 추정했나요? 비교한 단기금리는 현재 값인가요, 해당 만기 동안의 기대 평균인가요? 장기금리 변화가 기대 금리와 기간 프리미엄 중 어느 쪽 변화로 설명되는지 확인해요.",
+    "sources": [
+      {
+        "label": "미국 연준 · 기간 프리미엄의 정의·모형 추정·양수와 음수 가능성",
+        "url": "https://www.federalreserve.gov/data/three-factor-nominal-term-structure-model.htm"
+      },
+      {
+        "label": "뉴욕 연준 · 모형별 기간 프리미엄 추정치 차이와 음수 사례",
+        "url": "https://libertystreeteconomics.newyorkfed.org/2014/05/treasury-term-premia-1961-present/"
+      },
+      {
+        "label": "미국 연준 · 주식 PER에 반영되는 미래 이익 기대와 할인율",
+        "url": "https://www.federalreserve.gov/econres/notes/feds-notes/the-coming-long-run-slowdown-in-corporate-profit-growth-and-stock-returns-20220906.html"
+      }
+    ],
+    "addedAt": "2026-09-22"
   }
 ]
