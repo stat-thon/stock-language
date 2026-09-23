@@ -4136,5 +4136,101 @@
       }
     ],
     "addedAt": "2026-09-22"
+  },
+  {
+    "id": "index-inclusion",
+    "name": "지수 편입",
+    "aliases": [
+      "지수편입",
+      "Index inclusion"
+    ],
+    "category": "수급",
+    "level": "기초",
+    "definition": "특정 주식 등이 지수 산출자의 구성 기준에 따라 지수를 계산하는 종목 목록에 들어가는 일이에요. 지수는 시장 성과를 측정하는 기준이며 펀드 자체는 아니에요.",
+    "example": "가상 학습 예문: A주식이 X지수에 새로 포함되고 비중이 2%로 정해졌다면, X지수를 추종하는 펀드는 운용 방식에 맞춰 이를 반영해요. 실제 매수액은 따로 확인해야 해요.",
+    "pitfall": "지수 편입과 ETF의 종목 보유, 펀드로의 신규 자금 유입은 같은 뜻이 아니에요. 편입 발표와 실제 적용 시점도 구별해요. ETF 거래 기호를 지수 이름으로 읽지 않아요.",
+    "check": "정확한 지수·종목·주식 종류와 편입 공지, 적용일·비중을 확인했나요? 어느 펀드가 어떤 방식으로 그 지수를 추종하나요?",
+    "sources": [
+      {
+        "label": "FTSE Russell · 지수의 구성 종목과 추종 상품의 구분",
+        "url": "https://www.lseg.com/en/ftse-russell/your-index-matters"
+      },
+      {
+        "label": "SEC Investor.gov · 지수와 이를 추종하는 인덱스펀드",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/index-fund"
+      }
+    ],
+    "addedAt": "2026-09-24"
+  },
+  {
+    "id": "passive-capital",
+    "name": "패시브 자금",
+    "aliases": [
+      "패시브자금"
+    ],
+    "category": "수급",
+    "level": "중급",
+    "definition": "특정 지수를 추종하는 전략에 따라 운용되는 자금을 가리키는 표현이에요. 인덱스펀드 등이 이에 해당하며, 금액이 전체 운용자산인지 일정 기간의 자금 이동인지 확인해야 해요.",
+    "example": "가상 계산: 순자산 100억원인 비레버리지 현물 완전복제 펀드에서 미보유 A주식 비중을 0%→2%로 바꾸면 목표 보유액은 2억원이에요. 가격·순자산 고정, 비용 없음의 가정이며 다른 종목을 팔아 마련할 수도 있어요.",
+    "pitfall": "목표 보유액이나 ETF 거래대금은 신규 순유입과 달라요. 레버리지 상품은 일간 목표와 파생상품을 확인해야 하며 운용자산×배율을 현물 매수액으로 단정하지 않아요.",
+    "check": "금액은 자산 잔액·목표 배분·신규 순유입 중 무엇인가요? 기준일·기존 보유액·설정과 환매·추종 방식을 확인했나요?",
+    "sources": [
+      {
+        "label": "SEC Investor.gov · 인덱스펀드의 패시브 운용",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/index-fund"
+      },
+      {
+        "label": "SEC Investor.gov · ETF 거래와 설정·환매 구분",
+        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-24"
+      },
+      {
+        "label": "Direxion · 레버리지 ETF 일간 목표와 파생상품",
+        "url": "https://www.direxion.com/product/daily-semiconductor-bull-bear-3x-etfs"
+      }
+    ],
+    "addedAt": "2026-09-24"
+  },
+  {
+    "id": "settlement-t-plus-two",
+    "name": "T+2 결제",
+    "aliases": [
+      "T+2",
+      "D+2 결제",
+      "D+2"
+    ],
+    "category": "투자관리",
+    "level": "기초",
+    "definition": "국내주식에서 거래 체결일 이후 두 번째 결제 영업일에 대금과 주식을 정산하는 방식이에요. 체결일이 D이고 다음 결제 영업일부터 D+1, D+2로 세요.",
+    "example": "가상 일정: 수요일 체결 후 목·금요일이 휴장이고 월·화요일은 정상 결제일이면, 주말을 제외한 월요일이 D+1, 화요일이 D+2예요.",
+    "pitfall": "달력상 이틀이나 48시간 뒤라는 뜻이 아니에요. 미체결 주문에는 아직 그 주문의 결제일을 셀 수 없고, 해외시장에 같은 주기를 적용하면 안 돼요.",
+    "check": "실제 체결일과 거래소 휴장일을 확인했나요? 증권사가 안내하는 결제예정일과도 대조해요.",
+    "sources": [
+      {
+        "label": "한국거래소 · 매매체결일부터 T+2 결제와 휴장일",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T1.jsp"
+      }
+    ],
+    "addedAt": "2026-09-24"
+  },
+  {
+    "id": "withdrawable-cash",
+    "name": "출금가능금액",
+    "aliases": [
+      "출금 가능 금액",
+      "출금가능액"
+    ],
+    "category": "투자관리",
+    "level": "기초",
+    "definition": "증권계좌에서 현재 외부 계좌로 보낼 수 있는 금액이에요. 주식을 주문하는 데 쓸 수 있는 주문가능금액과 구별해요.",
+    "example": "가상 화면에서 주문가능금액이 70만원, 출금가능금액이 20만원이라면 현재 송금 가능액을 읽을 때는 20만원을 확인해요.",
+    "pitfall": "매도대금이 재매수에 쓰일 수 있어도 결제 전 바로 출금할 수 있다는 뜻은 아니에요. 예수금이라는 표시만으로 송금 가능액을 확정하지 않아요.",
+    "check": "지금 보고 있는 항목이 예수금·주문가능금액·출금가능금액 중 무엇인가요? 실제 출금은 계좌의 현재 표시와 증권사 안내를 확인해요.",
+    "sources": [
+      {
+        "label": "토스뱅크 · 예수금과 주문가능금액·출금가능금액의 구분",
+        "url": "https://www.tossbank.com/articles/deposit"
+      }
+    ],
+    "addedAt": "2026-09-24"
   }
 ]
