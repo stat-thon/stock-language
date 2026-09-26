@@ -4232,5 +4232,31 @@
       }
     ],
     "addedAt": "2026-09-24"
+  },
+  {
+    "id": "agentic-ai",
+    "name": "에이전트형 AI",
+    "aliases": [
+      "Agentic AI",
+      "에이전트 AI",
+      "에이전틱 AI"
+    ],
+    "category": "실적·산업",
+    "level": "중급",
+    "definition": "주어진 목표를 처리하려고 다음 작업과 도구를 선택하고, 실행 결과를 보며 여러 단계를 이어가는 AI 방식을 말해요. 사람의 승인이나 정해진 중단 조건을 둘 수도 있어요.",
+    "example": "가상 예시: 배송 문제를 조사하는 AI가 주문 정보를 조회한 뒤 결과에 따라 배송 추적이나 추가 질문을 선택해요. 환불처럼 승인이 필요한 행동은 담당자에게 넘겨요.",
+    "pitfall": "완전한 자율성이나 정확성을 보장하는 말은 아니에요. 업체마다 용어 범위가 다르며 미리 정한 순서를 따르는 워크플로와 구분하기도 해요. AI 이용량과 메모리 판매량이 같은 비율로 늘어난다는 뜻도 아니에요.",
+    "check": "어떤 작업을 몇 단계 수행하나요? 입력 길이·동시 실행 수·계산 결과 재사용 방식은 어떤가요? 사람의 확인과 중단 조건은 있나요?",
+    "sources": [
+      {
+        "label": "Anthropic · 에이전트·워크플로의 구분과 실행 결과에 따른 반복",
+        "url": "https://www.anthropic.com/engineering/building-effective-agents"
+      },
+      {
+        "label": "NVIDIA · 에이전트 추론의 문맥·메모리와 계산 재사용",
+        "url": "https://www.nvidia.com/en-us/use-cases/agentic-inference/"
+      }
+    ],
+    "addedAt": "2026-09-27"
   }
 ]
