@@ -4258,5 +4258,115 @@
       }
     ],
     "addedAt": "2026-09-27"
+  },
+  {
+    "id": "special-dividend",
+    "name": "특별배당",
+    "aliases": [
+      "특별 배당",
+      "일회성 배당",
+      "Special dividend"
+    ],
+    "category": "공시",
+    "level": "기초",
+    "definition": "회사가 통상적인 정기배당과 구분해 결정하는 비정기적 배당이에요. 일반적으로 한 번의 지급을 뜻하며, 정기배당을 하지 않는 회사도 지급할 수 있어요.",
+    "example": "가상 계산: 같은 종류 주식에 한 해 주당 정기배당 100원씩 4회와 특별배당 600원 1회를 모두 지급했다면 세전 합계는 100×4+600=1,000원이에요. 특별분이 포함된 한 분기 700원을 4배해 2,800원이라고 하면 특별분까지 매 분기 반복된다고 잘못 가정해요.",
+    "pitfall": "금액이 크다는 이유만으로 특별배당이 되는 것은 아니에요. 나중에 다른 특별배당을 결정할 수는 있지만 반복 지급을 약속한 말은 아니에요. 실제 받은 연간 합계에는 포함하되, 앞으로 받을 정기 수입을 추정할 때 그대로 반복시키면 안 돼요.",
+    "check": "회사 공시에서 정기분과 특별분이 구분됐나요? 같은 주식 종류의 주당 금액, 적용 기간, 배당받을 권리와 지급일을 확인했나요? 이번 지급 결정과 다음 배당에 관한 추정을 구별했나요?",
+    "sources": [
+      {
+        "label": "미 SEC Investor.gov · 배당과 비정기 특별배당",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/dividend"
+      },
+      {
+        "label": "Fidelity Learn · 정기배당과 특별배당의 차이",
+        "url": "https://www.fidelity.com/learning-center/smart-money/what-is-a-dividend"
+      },
+      {
+        "label": "FINRA · 일회성 특별배당과 예상 연간소득의 구별",
+        "url": "https://www.finra.org/sites/default/files/NoticeDocument/p117530.pdf"
+      }
+    ],
+    "addedAt": "2026-09-28"
+  },
+  {
+    "id": "regular-dividend",
+    "name": "정기배당",
+    "aliases": [
+      "정기 배당",
+      "Regular dividend"
+    ],
+    "category": "공시",
+    "level": "기초",
+    "definition": "회사가 분기·반기·연간 등 일정한 주기로 지급하는 통상적인 배당이에요. 정기적인 지급 주기와 앞으로의 배당금 보장은 서로 다른 뜻이에요.",
+    "example": "가상 계산: 주당 정기 현금배당 100원을 한 해 4번 지급하면 세전 합계는 400원이에요. 최근 분기 100원을 4배한 예상 연간 400원은 같은 금액과 주기가 유지된다는 가정이며, 아직 받지 않은 돈이 확정됐다는 뜻은 아니에요.",
+    "pitfall": "정기배당도 금액이나 지급 빈도가 바뀌거나 중단될 수 있어요. 특별배당이 끝난다는 사실만으로 다음 정기배당이 과거 금액과 같다고 확정할 수 없어요. 정기배당이 반드시 분기배당을 뜻하는 것도 아니에요.",
+    "check": "회사 배당정책의 적용 기간과 개별 배당 결정 공시를 함께 확인했나요? 과거 지급액과 다음 예상액, 정기분과 특별분, 주당 금액과 배당총액을 구별했나요?",
+    "sources": [
+      {
+        "label": "Fidelity Learn · 정기배당의 지급 주기와 변경 가능성",
+        "url": "https://www.fidelity.com/learning-center/smart-money/what-is-a-dividend"
+      },
+      {
+        "label": "FINRA · 정기배당으로 계산한 연간소득 추정과 실제 수령액",
+        "url": "https://www.finra.org/sites/default/files/NoticeDocument/p117530.pdf"
+      }
+    ],
+    "addedAt": "2026-09-28"
+  },
+  {
+    "id": "record-date",
+    "name": "배당기준일",
+    "aliases": [
+      "배당 기준일",
+      "Dividend record date"
+    ],
+    "category": "공시",
+    "level": "기초",
+    "definition": "이번 배당을 받을 대상 주주를 정하는 기준 날짜예요. 국내주식은 주문한 날과 결제일이 다르므로, 그날 주문했다는 사실만으로 배당 대상이 되지는 않아요.",
+    "example": "가상 일정: 금요일이 배당기준일이고 수·목·금요일이 정상 거래·결제일이라면, 수요일 매수 체결분이 T+2인 금요일에 결제돼요. 목요일부터 새로 산 주식에는 이번 배당권리가 붙지 않아요.",
+    "pitfall": "배당기준일은 마지막 매수일이나 배당금 입금일과 달라요. 모든 회사의 배당기준일이 연말 또는 분기 말로 고정되어 있지도 않아요.",
+    "check": "이번 배당의 기준일·배당락일을 회사 공시에서 확인했나요? 실제 매수 체결일과 휴장일을 반영한 결제일도 확인해요.",
+    "sources": [
+      {
+        "label": "삼성전자 공식 배당 FAQ · 배당기준일의 주식 보유와 매수 마감일 확인",
+        "url": "https://dividend.samsung.com/faq"
+      },
+      {
+        "label": "한국거래소 · T+2 결제와 휴장일",
+        "url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T1.jsp"
+      },
+      {
+        "label": "금융위원회 · 배당기준일을 배당액 결정 이후로 정할 수 있는 절차 개선",
+        "url": "https://www.fsc.go.kr/no010101/83741"
+      }
+    ],
+    "addedAt": "2026-09-28"
+  },
+  {
+    "id": "payment-date",
+    "name": "배당금 지급일",
+    "aliases": [
+      "배당지급일",
+      "배당금지급일",
+      "Dividend payment date"
+    ],
+    "category": "공시",
+    "level": "기초",
+    "definition": "회사가 배당 대상 주주에게 배당금을 지급하는 날짜예요. 누가 받을지를 정하는 배당기준일과 구별하며, 지급 일정은 해당 배당 공시·안내에서 따로 확인해요.",
+    "example": "학습용 가상 예문: A회사가 이번 배당의 대상 주주를 정한 뒤 한 달 후에 지급한다고 안내했다면, 대상 여부와 돈이 들어오는 시점을 나눠 확인해요. 모든 배당의 지급 간격이 한 달이라는 뜻은 아니에요.",
+    "pitfall": "지급일에 새로 샀다고 이번 배당을 받는 것은 아니에요. 지급일까지 계속 보유해야 한다는 뜻도 아니며, 계좌 입금·출금 가능 시각은 증권사 처리에 따라 확인해야 해요.",
+    "check": "배당액·지급 예정일이 공시에서 확인되나요? 예정일의 변경 여부와 실제 입금 내역을 구분해요.",
+    "sources": [
+      {
+        "label": "삼성전자 공식 배당 FAQ · 배당기준일·지급 시기 구분과 증권사를 통한 지급",
+        "url": "https://dividend.samsung.com/faq"
+      },
+      {
+        "label": "한국거래소 · 배당락 거래의 매수자에게 해당 배당권리가 없는 원칙",
+        "url": "https://global.krx.co.kr/contents/GLB/06/0602/0602010204/GLB0602010204T1.jsp"
+      }
+    ],
+    "addedAt": "2026-09-28"
   }
 ]
