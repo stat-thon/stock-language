@@ -4368,5 +4368,91 @@
       }
     ],
     "addedAt": "2026-09-28"
+  },
+  {
+    "id": "fixed-interest-rate",
+    "name": "고정금리",
+    "aliases": [
+      "고정 금리",
+      "Fixed interest rate",
+      "Fixed rate"
+    ],
+    "category": "기업가치",
+    "level": "기초",
+    "definition": "계약에서 정한 기간 동안 적용 이자율이 일정한 방식이에요. 시장금리가 움직여도 기존 계약의 고정 이자율이 자동으로 함께 바뀌지는 않아요.",
+    "example": "가상 계산: 고정금리 부채 800억 원에 연 3%가 적용되고 원금이 1년 내내 같다면 단순 연 이자는 800×0.03=24억 원이에요. 시장금리가 6%가 돼도 기존 계약의 3%가 유지되는 동안 이 계산은 같아요. 수수료·세금 효과·파생계약은 제외했어요.",
+    "pitfall": "고정금리 부채가 있다는 이유만으로 회사 전체 이자 부담이 고정되는 것은 아니에요. 다른 변동금리 부채, 신규 차입, 기존 부채의 차환에 따라 달라질 수 있어요. 고정금리와 원금 상환능력 보장도 다른 말이에요.",
+    "check": "재무제표 주석에서 고정금리 적용 기간·차입 잔액·만기를 확인했나요? 금리위험을 바꾸는 파생계약이나 신규 차입 계획도 있나요?",
+    "sources": [
+      {
+        "label": "미 SEC Investor.gov · 고정금리와 변동금리의 정의",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/interest"
+      },
+      {
+        "label": "미 SEC Investor.gov · 회사채 고정 이표와 채무불이행 위험",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products"
+      },
+      {
+        "label": "미 연준 FEDS Notes · 고정금리 부채의 차환과 금리 전달 시차",
+        "url": "https://www.federalreserve.gov/econres/notes/feds-notes/stress-testing-the-corporate-debt-servicing-capacity-a-scenario-analysis-20240509.html"
+      }
+    ],
+    "addedAt": "2026-09-29"
+  },
+  {
+    "id": "floating-interest-rate",
+    "name": "변동금리",
+    "aliases": [
+      "변동 금리",
+      "Floating interest rate",
+      "Variable interest rate"
+    ],
+    "category": "기업가치",
+    "level": "기초",
+    "definition": "계약에서 정한 기준이 되는 금리나 지표에 따라 적용 이자율이 조정되는 방식이에요. 예를 들어 기준지표 금리에 가산금리를 더하고, 약정한 주기마다 다시 정할 수 있어요.",
+    "example": "가상 계산: 고정 800억 원×3%와 변동 200억 원×4%의 단순 연 이자 합계는 24+8=32억 원이에요. 변동금리만 6%로 재설정되면 24+12=36억 원이에요. 각 조건과 원금이 1년 내내 유지되고 수수료·세금 효과·파생계약이 없다고 가정한 비교예요.",
+    "pitfall": "모든 변동금리가 미국 국채금리나 기준금리와 같은 날 같은 폭으로 바뀌는 것은 아니에요. 기준지표·가산금리·재설정 주기가 다를 수 있어요. 연중에 금리가 바뀌었다면 각 적용 기간을 나눠 이자를 계산해야 해요.",
+    "check": "계약이 참조하는 지표와 가산금리, 다음 재설정일을 확인했나요? 전체 부채 중 변동금리 비중과 금리위험을 줄이거나 바꾸는 파생계약도 확인해요.",
+    "sources": [
+      {
+        "label": "미 SEC Investor.gov · 변동금리 회사채의 기준지표와 주기적 재설정",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products"
+      },
+      {
+        "label": "미 연준 FEDS Notes · 고정·변동금리 부채의 이자비용 반응과 금리위험 조정",
+        "url": "https://www.federalreserve.gov/econres/notes/feds-notes/stress-testing-the-corporate-debt-servicing-capacity-a-scenario-analysis-20240509.html"
+      }
+    ],
+    "addedAt": "2026-09-29"
+  },
+  {
+    "id": "refinancing",
+    "name": "차환",
+    "aliases": [
+      "리파이낸싱",
+      "재융자",
+      "Refinancing"
+    ],
+    "category": "기업가치",
+    "level": "중급",
+    "definition": "새 대출이나 채권 발행으로 조달한 돈으로 기존 빚을 갚아 바꾸는 것이에요. 만기 도래 때뿐 아니라 조건이 허용하면 만기 전에도 할 수 있으며, 새 금리와 만기 등은 다시 정해져요.",
+    "example": "가상 계산: 연 이자 800억 원×3%+200억 원×6%=36억 원인 회사가 고정금리 부채 800억 원 전부를 만기에 연 6%로 차환했다고 가정해요. 이후 두 부채의 원금과 6%가 1년 내내 유지되면 단순 연 이자는 48+12=60억 원이에요. 수수료·세금 효과·파생계약은 제외했어요.",
+    "pitfall": "차환은 빚이 사라지는 일이 아니며 항상 더 싼 금리로 가능한 것도 아니에요. 새 자금을 구하지 못할 수도 있어요. 실제로는 일부만 차환하거나 현금으로 갚을 수 있으므로, 위 가상 계산을 모든 기업의 미래 비용으로 일반화하면 안 돼요.",
+    "check": "만기별 상환액과 새 조달금리·수수료·발행 조건을 확인했나요? 전액 차환인지 일부 현금 상환인지, 실행 완료인지 계획인지 구별했나요?",
+    "sources": [
+      {
+        "label": "미 SEC Investor.gov · 기존 채권 상환과 새 채권 발행의 예",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/callable-or-redeemable-bonds"
+      },
+      {
+        "label": "미 연준 FEDS Notes · 만기 부채 차환과 조기 차환의 이자비용 반영",
+        "url": "https://www.federalreserve.gov/econres/notes/feds-notes/stress-testing-the-corporate-debt-servicing-capacity-a-scenario-analysis-20240509.html"
+      },
+      {
+        "label": "영란은행 · 기업의 차환 시점·조달 위험과 현금 상환 대안",
+        "url": "https://www.bankofengland.co.uk/bank-overground/2023/how-large-are-the-refinancing-risks-facing-uk-corporates-from-market-based-finance"
+      }
+    ],
+    "addedAt": "2026-09-29"
   }
 ]
