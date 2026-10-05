@@ -4569,5 +4569,63 @@
       }
     ],
     "addedAt": "2026-10-04"
+  },
+  {
+    "id": "lead-time",
+    "name": "리드타임",
+    "aliases": [
+      "리드 타임",
+      "Lead time"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "정한 시작 시점부터 끝 시점까지 걸리는 기간이에요. 구매에서는 발주부터 수령까지를 뜻할 수 있고, 제조에서는 생산에 걸리는 기간을 뜻할 수 있어요. 발주 준비나 수령 후 검수까지 포함하는 전체 조달기간과는 범위가 다를 수 있어요.",
+    "example": "가상 계산: 발주 준비 2주, 발주부터 수령까지 5주, 수령 후 검수·재고 사용 준비 1주가 같은 달력 기준으로 겹치지 않고 이어지면 전체는 8주예요. 이 예시의 발주→수령은 5주이며, 8주 전부가 제조기간이라는 뜻은 아니에요.",
+    "pitfall": "관측 평균이나 예상 리드타임은 특정 주문에서 공급자가 약속한 납품일과 달라요. 기간이 늘었다는 말만으로 모든 제품의 공급 부족이나 특정 회사의 매출·이익 증가를 확정할 수 없어요. 서로 겹치는 공정의 기간은 단순히 더하면 안 돼요.",
+    "check": "시작·끝 시점, 달력일·근무일, 예상·실제 여부가 같나요? 어떤 제품 규격·업체·주문수량·조사일의 수치인가요? 운송·검수 시간이 이미 포함됐나요? 특정 주문의 약정 납품일은 별도 확인했나요?",
+    "sources": [
+      {
+        "label": "Oracle · 제조·구매 리드타임과 사전·사후 처리기간",
+        "url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26c/faumf/lead-times-usage-in-manufacturing.html"
+      },
+      {
+        "label": "Oracle · 구매주문의 요청·약정 납품일과 운송·작업 달력",
+        "url": "https://docs.oracle.com/en/cloud/saas/supply-chain-and-manufacturing/26b/fausp/how-purchase-orders-are-scheduled.html"
+      }
+    ],
+    "addedAt": "2026-10-06"
+  },
+  {
+    "id": "mlcc",
+    "name": "MLCC",
+    "aliases": [
+      "적층세라믹콘덴서",
+      "적층 세라믹 콘덴서",
+      "적층세라믹캐패시터",
+      "적층 세라믹 커패시터",
+      "Multilayer Ceramic Capacitor",
+      "Multi-Layer Ceramic Capacitor"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "세라믹 유전체와 전극을 여러 층으로 쌓은 커패시터예요. 전하를 저장하며, 전자회로에서 전원 안정과 잡음 억제 등에 쓰이는 수동부품이에요.",
+    "example": "가상 제품 비교: A가 정전용량 10µF·정격전압 6.3V, B가 1µF·50V라면 둘 다 MLCC여도 동일한 규격은 아니에요. 특정 규격의 납기를 MLCC 전체의 납기로 읽지 않아요.",
+    "pitfall": "MLCC라는 이름만으로 규격·용도·공급업체가 같다고 볼 수 없어요. MLCC 공급 이야기가 특정 상장사의 직접 생산·공급계약·매출로 이어진다고 단정하지 않아요.",
+    "check": "정전용량·정격전압·크기·사용온도와 IT용·차량용 등 적용 분야는 무엇인가요? 대상 업체와 제품군은 어디까지인가요? 특정 회사와의 관계는 공식 사업·계약 자료로 확인했나요?",
+    "sources": [
+      {
+        "label": "Murata · MLCC의 유전체·전극 적층 구조와 전하 저장",
+        "url": "https://www.murata.com/support/faqs/capacitor/ceramiccapacitor/conf/0001"
+      },
+      {
+        "label": "삼성전기 · MLCC의 전원 안정·노이즈 억제 역할",
+        "url": "https://samsungsem.com/kr/newsroom/news/view.do?id=3400"
+      },
+      {
+        "label": "Murata · MLCC의 용도별 규격과 제품군",
+        "url": "https://corporate.murata.com/en-sg/technology/technology-applications/ceramiccapacitor"
+      }
+    ],
+    "addedAt": "2026-10-06"
   }
 ]
