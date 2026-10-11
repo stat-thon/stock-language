@@ -4658,5 +4658,58 @@
       }
     ],
     "addedAt": "2026-10-08"
+  },
+  {
+    "id": "bit-byte",
+    "name": "비트·바이트",
+    "aliases": [
+      "테라비트",
+      "테라바이트",
+      "Tbit",
+      "Tb",
+      "TB",
+      "bit",
+      "byte"
+    ],
+    "category": "실적·산업",
+    "level": "기초",
+    "definition": "비트는 정보량의 단위이고, 1바이트(B)는 8비트(bit)예요. 십진 테라(T)는 10¹²을 뜻하므로 1 TB=8 Tbit예요. 작은 b로 비트를 나타내는 Tb 표기도 쓰지만, 혼동을 줄이려면 Tbit처럼 풀어 확인해요.",
+    "example": "학습용 환산: 8 Tbit와 1 TB는 같은 정보량이에요. 8 Tbit를 8 TB로 읽으면 8배 큰 값으로 잘못 해석해요.",
+    "pitfall": "T만 적힌 메모리 숫자는 비트인지 바이트인지 알 수 없어요. 테라(T, 10¹²)와 테비(Ti, 2⁴⁰), 용량과 초당 전송량도 구분해요. 단위 환산만으로 매출을 계산할 수는 없어요.",
+    "check": "원자료는 bit인가요 B인가요? 십진인가요 이진인가요? 용량인가요 속도인가요? 두 숫자의 대상·기간·단위를 맞췄나요?",
+    "sources": [
+      {
+        "label": "NIST · 1바이트=8비트와 이진 접두어",
+        "url": "https://pml.nist.gov/cuu/Units/binary.html"
+      },
+      {
+        "label": "NIST · 테라·테비와 접두어 사용법",
+        "url": "https://www.nist.gov/pml/special-publication-330/sp-330-section-3"
+      }
+    ],
+    "addedAt": "2026-10-12"
+  },
+  {
+    "id": "cagr",
+    "name": "CAGR",
+    "aliases": [
+      "연평균성장률",
+      "연평균 성장률",
+      "복합연평균성장률",
+      "Compound Annual Growth Rate"
+    ],
+    "category": "기업가치",
+    "level": "기초",
+    "definition": "시작값에서 끝값까지 매년 같은 비율로 복리 성장했다고 환산한 연간 성장률이에요. 양수인 같은 기준의 두 값을 n년 간격으로 비교할 때 [(끝값/시작값)^(1/n)−1]×100으로 구해요.",
+    "example": "가상 매출이 2년 동안 100억원에서 144억원이 되면 전체 증가율은 44%, CAGR은 20%예요. 100→120→144로 매년 20%씩 성장한 것과 같은 시작·끝값이라는 뜻이에요.",
+    "pitfall": "전체 증가율을 연수로 나누거나 실제 연도별 성장률의 산술평균으로 계산하지 않아요. 중간의 변동·적자는 보이지 않으며 시작값이 0이거나 음수인 수치를 이 공식에 그대로 넣지 않아요. 예상 끝값으로 구한 CAGR은 실현된 성과가 아니에요.",
+    "check": "두 값의 단위·범위와 기간 간격을 맞췄나요? 실적과 전망 중 무엇인가요? 중간 해 수치와 전망의 가정도 확인했나요?",
+    "sources": [
+      {
+        "label": "Fidelity · CAGR의 연수·산식",
+        "url": "https://www.fidelity.com/learning-center/trading-investing/rate-of-return"
+      }
+    ],
+    "addedAt": "2026-10-12"
   }
 ]
