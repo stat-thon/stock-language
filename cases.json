@@ -1,5 +1,66 @@
 [
   {
+    "id": "case-44",
+    "stock": "000660",
+    "title": "HBF와 데이터 병목: 용량·대역폭·지연시간은 무엇이 다를까",
+    "excerpt": "HBM 다음에 HBF까지 나오면 … 메모리 사이 데이터 이동이 병목이라는 거였음",
+    "sourceUrl": "https://www.tossinvest.com/community/posts/333259836",
+    "sourceShareUrl": "https://tossinvest.com/_ul/kgTMGC",
+    "sourceAuthor": "키나루디안마기",
+    "sourceVerifiedAt": "2026-10-16 (한국시간)",
+    "postSummary": "공개된 도입부에서 작성자는 HBM에 이어 HBF라는 이름이 등장해도 곧바로 다음 해 이익으로 연결되는 것은 아니라고 말합니다. 이어 14일 SEDEX에서 나온 설명이라며 메모리 사이 데이터 이동이 병목이 되고 연산칩이 데이터를 기다릴 수 있다는 주장을 소개합니다. 제목과 공개된 두 문단까지만 확인했으며 더 보기에는 QR 로그인 안내가 나타났습니다. 행사 발언의 진위나 게시물의 나머지 주장·결론은 확인하지 않았습니다.",
+    "postSummaryScope": "partial",
+    "terms": [
+      "hbf",
+      "hbm",
+      "nand",
+      "bandwidth-latency",
+      "bit-byte"
+    ],
+    "category": "실적·산업",
+    "claimType": "신제품과 이익을 구분하며 데이터 이동 병목을 설명하는 공개 도입부",
+    "explanation": "HBF는 High Bandwidth Flash, 즉 NAND 플래시를 바탕으로 높은 데이터 전송 대역폭을 제공하려는 기술이에요. DRAM 기반인 HBM의 다음 세대 이름과는 달라요. SK하이닉스는 HBM과 SSD 사이를 보완하는 계층으로 설명해요. 이제 용량·대역폭·지연시간을 나눠 볼게요. 용량은 담을 수 있는 데이터 양, 대역폭은 일정 시간에 옮길 수 있는 양, 지연시간은 요청에 대한 응답을 기다리는 시간이에요. 가상 장치의 사용 가능한 용량이 32GB이고 8GB를 한 번 연속해서 읽는다고 해볼게요. 실효 전송률이 일정하게 4GB/s라면 전송량÷전송률=8÷4=2초예요. 같은 8GB를 실효 8GB/s로 읽으면 1초예요. 둘 다 초기 대기·추가 처리 시간을 제외한 전송 구간만 계산했어요. 32GB는 초당 전송량이 아니고, 이 계산만으로 한 번의 요청에 대한 지연시간을 알 수도 없어요. 대역폭이 두 배여도 전체 작업이 언제나 두 배 빨라지는 것은 아니에요. 실제로는 어떤 데이터 이동 경로가 제한인지, 연산이나 다른 대기 시간이 더 큰지를 따로 측정해야 해요.",
+    "reason": "기존 출하·수요에서 이익을 추론하는 사례와 달리, HBF의 기술 분류와 GB·GB/s·시간이 나타내는 서로 다른 성능 지표에 집중해요. 원문의 데이터 이동 병목을 계기로 기존 대역폭·지연시간 용어를 구체적인 단위 계산과 연결하는 보충학습이에요.",
+    "checks": [
+      {
+        "question": "HBF를 HBM의 새 세대 이름으로 읽고 있나요?",
+        "detail": "공식 설명은 HBF를 HBM과 SSD 사이의 보조 계층으로 다뤄요. 어떤 메모리 소재와 시스템 역할을 뜻하는지 구분하고, HBF 등장만으로 HBM의 역할이 모두 사라진다고 판단하지 않아요.",
+        "label": "SK하이닉스 · HBF의 시스템 내 역할",
+        "url": "https://news.skhynix.com/en/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/"
+      },
+      {
+        "question": "용량·전송률·응답 대기 시간을 같은 숫자로 취급했나요?",
+        "detail": "가상 예시의 32GB는 용량, 4GB/s는 가정한 실효 전송률이에요. 8GB÷4GB/s=2초는 전송 구간의 계산값이에요. 여기서는 모두 십진 GB를 사용하며 캐시 재사용·동시 작업·초기 대기·추가 처리 시간을 제외해요. 실제 최대 사양만으로 이 속도가 계속 나온다고 가정하지 않아요.",
+        "label": "NVIDIA · 데이터량과 대역폭에 따른 전송시간 및 성능 제한",
+        "url": "https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html"
+      },
+      {
+        "question": "어느 경로를 어떤 조건에서 측정한 성능인가요?",
+        "detail": "메모리 내부, CPU와 GPU 사이, GPU끼리의 연결을 구별해요. 읽기·쓰기, 단방향·양방향, 데이터 크기와 측정 조건을 맞추고 실제 전송률과 지연시간을 따로 확인해요. 한 경로의 개선을 전체 AI 작업의 같은 비율 개선으로 확대하지 않아요.",
+        "label": "NVIDIA · 경로·복사 방식별 대역폭과 지연시간 측정",
+        "url": "https://developer.nvidia.com/blog/nvidia-nvbandwidth-your-essential-tool-for-measuring-gpu-interconnect-and-memory-performance/"
+      },
+      {
+        "question": "성능 자료의 비교 조건과 기술 발표의 범위를 확인했나요?",
+        "detail": "Sandisk 팩트시트는 NAND 기반 기술을 설명하고 성능 비교에 내부 시험·시뮬레이션 조건을 붙여요. 특정 모델·작업의 비교를 모든 AI 작업에 적용하지 않아요. 이 자료는 기술 개념의 근거이며 게시물에 적힌 SEDEX 발언을 확인한 자료가 아니에요.",
+        "label": "Sandisk · HBF 팩트시트와 성능 비교 각주",
+        "url": "https://documents.sandisk.com/content/dam/asset-library/en_us/assets/public/sandisk/collateral/company/Sandisk-HBF-Fact-Sheet.pdf"
+      },
+      {
+        "question": "규격 발표와 실제 채택·판매·이익을 구별했나요?",
+        "detail": "공식 규격은 시스템 설계의 공통 기준을 제공한다는 의미예요. 고객 채택, 실제 출하량·판매가격·원가와 실적 반영 시점은 별도 근거가 필요해요. 기술의 목적이나 기대 효과만으로 다음 해 이익을 계산하지 않아요.",
+        "label": "Sandisk · HBF 규격의 범위와 기대 효과의 성격",
+        "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-03-Sandisk-and-sk-hynix-advance-global-standardization-of-hbf"
+      }
+    ],
+    "caution": "32GB·8GB·4GB/s·8GB/s와 2초·1초는 실제 HBF·HBM 제품 사양이나 측정값이 아닌 학습용 가정이에요. 연속 전송 구간만 비교하며 메모리 요청의 지연시간이나 전체 AI 실행시간을 계산한 것이 아니에요. 14일 SEDEX의 실제 발언·출시 및 양산 상태·회사 이익 전망은 검증하지 않았습니다. 로그인 뒤 본문은 요약하거나 판단에 사용하지 않았습니다.",
+    "publishedAt": "피드 표시: 1분 · 개별 글 확인: 1분 · 재확인: 6분",
+    "collectedAt": "2026-10-16 (한국시간)",
+    "sourceLabel": "토스증권 커뮤니티 · 화면 확인",
+    "sourceNote": "2026-10-15 밤–10-16 00시대 한국시간에 SK하이닉스 커뮤니티 피드에서 글을 읽고, 공유 버튼의 단축 주소를 열어 개별 게시물의 작성자 키나루디안마기·제목·공개 두 문단을 화면으로 대조했습니다. 최초 피드와 개별 글은 모두 1분으로 표시됐습니다. 날짜 경계를 명확히 하기 위해 10-16 00시대에 동일 단축 주소를 다시 열어 같은 개별 게시물·작성자·제목·가시 두 문단을 재대조했고 이때 6분으로 표시됐습니다. 수집일과 원문 확인일은 10-16으로 기록했습니다. 더 보기를 눌렀을 때 QR 로그인 안내가 나타나 확인 범위를 partial로 기록했습니다. 두 공개 문단에서 짧은 구절만 발췌하고 떨어진 부분은 …로 표시했습니다. 화면에 공개되지 않은 나머지 본문과 댓글은 사용하지 않았습니다. 기술 개념은 공식 자료로 보충했지만 행사 발언과 실제 제품 성능·실적 주장을 검증한 것으로 표시하지 않았습니다.",
+    "editorialTitle": true
+  },
+  {
     "id": "case-43",
     "stock": "005930",
     "title": "RSI가 과매도 구간이 아니라는 말, 같은 설정으로 확인했나요",

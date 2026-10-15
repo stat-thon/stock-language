@@ -4761,5 +4761,31 @@
       }
     ],
     "addedAt": "2026-10-15"
+  },
+  {
+    "id": "hbf",
+    "name": "HBF",
+    "aliases": [
+      "High Bandwidth Flash",
+      "High-Bandwidth Flash",
+      "고대역폭 플래시"
+    ],
+    "category": "실적·산업",
+    "level": "중급",
+    "definition": "High Bandwidth Flash의 약자로, NAND 플래시를 기반으로 높은 데이터 전송 대역폭과 큰 용량을 함께 제공하려는 기술이에요. AI 추론을 위한 메모리 구조에서 HBM과 SSD 사이를 보완하는 계층으로 설명돼요.",
+    "example": "학습용 가상 표현: ‘HBF를 넣어 더 큰 모델 데이터를 담을 수 있어도 모든 작업의 응답이 같은 비율로 빨라지는 것은 아니다.’ 용량, 대역폭, 지연시간과 작업 조건을 따로 비교한다는 뜻이에요.",
+    "pitfall": "HBM의 다음 세대 이름이나 모든 HBM을 대체한다는 뜻이 아니에요. 특정 시험·시뮬레이션의 성능을 모든 작업에 적용하거나 기술 발표를 확정 매출·이익으로 읽지 않아요.",
+    "check": "어떤 제품·규격·시스템 역할을 말하나요? 성능 비교는 실측인가요 시뮬레이션인가요? 데이터 크기·읽기/쓰기·모델·지연시간 조건과 실제 채택 근거를 확인했나요?",
+    "sources": [
+      {
+        "label": "SK하이닉스 · HBF와 HBM·SSD의 보완 관계",
+        "url": "https://news.skhynix.com/en/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/"
+      },
+      {
+        "label": "Sandisk · NAND 기반 HBF와 시험·시뮬레이션의 조건",
+        "url": "https://documents.sandisk.com/content/dam/asset-library/en_us/assets/public/sandisk/collateral/company/Sandisk-HBF-Fact-Sheet.pdf"
+      }
+    ],
+    "addedAt": "2026-10-16"
   }
 ]
