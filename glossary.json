@@ -4787,5 +4787,48 @@
       }
     ],
     "addedAt": "2026-10-16"
+  },
+  {
+    "id": "vix",
+    "name": "VIX",
+    "aliases": [
+      "Cboe Volatility Index",
+      "변동성지수(VIX)"
+    ],
+    "category": "거시경제",
+    "level": "중급",
+    "definition": "S&P 500 옵션 가격에 반영된 향후 30일 변동성 수준을 연율화해 나타낸 Cboe의 지수예요. 내재변동성은 옵션 가격에서 도출한 변동성이라는 뜻이며, 가격의 상승·하락 방향을 정하는 값은 아니에요.",
+    "example": "학습용 가정: VIX가 29이면 연율화 내재변동성 29% 수준을 뜻해요. 앞으로 30일 동안 29% 하락한다거나 하락 확률이 29%라는 뜻은 아니에요.",
+    "pitfall": "공포지수라는 별명만으로 VIX라고 확정하지 않아요. CNN 공포·탐욕 점수와 다른 척도이며, 다음 날 특정 주식의 방향을 보장하지 않아요.",
+    "check": "정식 지수가 VIX인가요? 관찰 시각·이전 값·30일 측정 기간과 연율화를 구분했나요? 숫자를 주가 하락률이나 확률로 읽지 않았나요?",
+    "sources": [
+      {
+        "label": "Cboe · VIX의 30일·연율화 정의와 오해",
+        "url": "https://www.cboe.com/insights/posts/what-the-vix-and-vix-1-d-indices-attempt-to-measure-and-how-they-differ"
+      }
+    ],
+    "addedAt": "2026-10-17"
+  },
+  {
+    "id": "fear-greed-index",
+    "name": "CNN 공포·탐욕지수",
+    "aliases": [
+      "CNN Fear & Greed Index",
+      "CNN Fear and Greed Index",
+      "CNN 공포탐욕지수"
+    ],
+    "category": "거시경제",
+    "level": "기초",
+    "definition": "주식시장 관련 7개 지표를 같은 비중으로 종합해 심리를 0~100 점수로 나타내는 CNN의 지수예요. 낮을수록 공포 쪽, 높을수록 탐욕 쪽을 뜻해요.",
+    "example": "학습용 가정: 이 지수가 29라면 0~100 척도의 29점이에요. 연율화 변동성 29%나 주가 하락 확률 29%를 뜻하지 않아요.",
+    "pitfall": "VIX나 다른 기관의 동명 심리지수와 동일하지 않아요. 낮은 점수만으로 반등 시점·적정 가격·매수 또는 매도 결론이 나오지 않아요.",
+    "check": "산출기관이 CNN인가요? 원자료의 갱신 시각과 이전 값은 무엇인가요? 점수와 주가 수익률·확률을 구분했나요?",
+    "sources": [
+      {
+        "label": "CNN · Fear & Greed Index 공식 FAQ",
+        "url": "https://edition.cnn.com/markets/fear-and-greed"
+      }
+    ],
+    "addedAt": "2026-10-17"
   }
 ]
